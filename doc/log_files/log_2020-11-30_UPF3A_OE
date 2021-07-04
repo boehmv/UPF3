@@ -1,0 +1,1925 @@
+
+####################################################
+## Complete RNA-Seq Analysis [CRSA] Version 0.0.6 ##
+####################################################
+
+######################
+## General settings ##
+######################
+
+Reference used: gencode.v33.SIRVomeERCCome
+Sequencing design (paired/single): paired
+Name of the study: UPF3
+Location of files on server: /srv/2020_11_UPF3_DW
+Location of project folder: /home/volker/2020_11_UPF3_2nd_DW
+Experiment file used for this analysis: /home/volker/2020_11_UPF3_2nd_DW/experiment.txt
+
+############################
+## Conditions and samples ##
+############################
+
+cond0 	 control 	 A006850100_136526 A006850100_136528 A006850100_136530
+cond1 	 UPF3A_OE 	 A006850100_136532 A006850100_136534 A006850100_136536
+
+######################
+## Analysis options ##
+######################
+
+STAR_enable (-M) = true
+Salmon_enable (-C) = true
+DESeq2_enable (-D) = true
+ISAR_enable (-I) = true
+leafcutter_enable (-L) = true
+IRFinder_enable (-i) = 
+QC_enable (-Q) = true
+
+
+###################
+## Perform STAR mapping, indexing and track generation
+###################
+
+STAR directory: /home/volker/reference
+STAR version: 2.7.3a
+Alfred version: v0.2.1
+Using system JDK.
+WARNING: package com.sun.java.swing.plaf.windows not in java.desktop
+WARNING: package sun.awt.windows not in java.desktop
+java version "11.0.2" 2019-01-15 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.2+9-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.2+9-LTS, mixed mode)
+WARN [2020-11-30T15:36:47,480]  [Globals.java:139] [main]  Development mode is enabled
+IGV Version 2.8.0 01/06/2020 08:43 PM
+Done
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136526
+
+2020-11-30 15:36:47 A006850100_136526 BAM file already generated
+2020-11-30 15:36:47 A006850100_136526 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136526 BAM file link already created
+2020-11-30 15:36:47 A006850100_136526 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136526 BAM file already converted to track
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136528
+
+2020-11-30 15:36:47 A006850100_136528 BAM file already generated
+2020-11-30 15:36:47 A006850100_136528 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136528 BAM file link already created
+2020-11-30 15:36:47 A006850100_136528 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136528 BAM file already converted to track
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136530
+
+2020-11-30 15:36:47 A006850100_136530 BAM file already generated
+2020-11-30 15:36:47 A006850100_136530 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136530 BAM file link already created
+2020-11-30 15:36:47 A006850100_136530 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136530 BAM file already converted to track
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136532
+
+2020-11-30 15:36:47 A006850100_136532 BAM file already generated
+2020-11-30 15:36:47 A006850100_136532 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136532 BAM file link already created
+2020-11-30 15:36:47 A006850100_136532 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136532 BAM file already converted to track
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136534
+
+2020-11-30 15:36:47 A006850100_136534 BAM file already generated
+2020-11-30 15:36:47 A006850100_136534 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136534 BAM file link already created
+2020-11-30 15:36:47 A006850100_136534 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136534 BAM file already converted to track
+
+2020-11-30 15:36:47 Start STAR mapping of sample A006850100_136536
+
+2020-11-30 15:36:47 A006850100_136536 BAM file already generated
+2020-11-30 15:36:47 A006850100_136536 BAM file already indexed
+2020-11-30 15:36:47 A006850100_136536 BAM file link already created
+2020-11-30 15:36:47 A006850100_136536 BAM file index link already created
+2020-11-30 15:36:47 A006850100_136536 BAM file already converted to track
+
+###################
+## Perform salmon analysis
+###################
+
+Salmon version: salmon 1.3.0
+
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136526
+2020-11-30 15:36:48 Sample A006850100_136526 already analyzed
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136528
+2020-11-30 15:36:48 Sample A006850100_136528 already analyzed
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136530
+2020-11-30 15:36:48 Sample A006850100_136530 already analyzed
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136532
+2020-11-30 15:36:48 Sample A006850100_136532 already analyzed
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136534
+2020-11-30 15:36:48 Sample A006850100_136534 already analyzed
+2020-11-30 15:36:48 Start Salmon analysis A006850100_136536
+2020-11-30 15:36:48 Sample A006850100_136536 already analyzed
+
+###################
+## Perform DESeq2 analysis
+###################
+
+DESeq2 directory: /home/volker/Tools/DESeq2
+
+2020-11-30 15:36:48 Make directory /home/volker/2020_11_UPF3_2nd_DW/DESeq2/
+[1] TRUE
+Parsed with column specification:
+cols(
+  TXNAME = col_character(),
+  GENEID = col_character()
+)
+reading in files with read_tsv
+1 2 3 4 5 6 
+summarizing abundance
+summarizing counts
+summarizing length
+using counts and average transcript lengths from tximport
+Warning message:
+In DESeqDataSet(se, design = design, ignoreRank) :
+  some variables in design formula are characters, converting to factors
+estimating size factors
+using 'avgTxLength' from assays(dds), correcting for library size
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_OE
+Generate Glimma MD plots for UPF3A_OE
+GO analysis for UPF3A_OE running
+Detected custom background input, domain scope is set to 'custom'
+No results to show
+Please make sure that the organism is correct or set significant = FALSE
+ERROR - GO analysis for UPF3A_OE NOT successful!
+GO analysis for UPF3A_OE finished
+Saved DESeq2 analysis RData for UPF3A_OE in /home/volker/2020_11_UPF3_2nd_DW/DESeq2/UPF3A_OE
+# of conditions:
+2
+Conditions:
+['control', 'UPF3A_OE']
+UPF3A_OE
+# rows before filtering:
+21631
+# rows after filtering
+344
+# rows of final df
+344
+Condition UPF3A_OE processed
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Registering fonts with R
+Warning message:
+Removed 7522 rows containing missing values (geom_point). 
+Error in combined_heat[, i] : incorrect number of dimensions
+Calls: order
+Execution halted
+
+###################
+## Perform ISAR analysis
+###################
+
+IsoformSwitchAnalyzeR directory: /home/volker/Tools/ISAR
+2020-11-30 15:37:26 Make directory /home/volker/2020_11_UPF3_2nd_DW/ISAR/
+Loading required package: limma
+Loading required package: DEXSeq
+Loading required package: BiocParallel
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: SummarizedExperiment
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply, rowsum
+
+Loading required package: DESeq2
+Loading required package: AnnotationDbi
+Loading required package: RColorBrewer
+Loading required package: ggplot2
+Step 1 of 3: Identifying which algorithm was used...
+    The quantification algorithm used was: Salmon
+Step 2 of 3: Reading data...
+reading in files with read_tsv
+1 2 3 4 5 6 
+Step 3 of 3: Normalizing FPKM/TxPM values via edgeR...
+Done
+
+Step 1 of 6: Checking data...
+Step 2 of 6: Obtaining annotation...
+    importing GTF (this may take a while)
+Step 3 of 6: Calculating gene expression and isoform fraction...
+     94747 ( 41.9%) isoforms were removed since they were not expressed in any samples.
+Step 4 of 6: Merging gene and isoform expression...
+  |                                                                              |                                                                      |   0%  |                                                                              |===================================                                   |  50%  |                                                                              |======================================================================| 100%
+Step 5 of 6: Making comparisons...
+  |                                                                              |                                                                      |   0%  |                                                                              |======================================================================| 100%
+Step 6 of 6: Making switchAnalyzeRlist object...
+Done
+Warning message:
+In importRdata(isoformCountMatrix = salmonQuant$counts, isoformRepExpression = salmonQuant$abundance,  :
+  The annotation and quantification (count/abundance matrix and isoform annotation) Seem to be slightly different. 
+Specifically:
+ 839 isoforms were only found in the annotation
+ 
+Please make sure this is on purpouse since differences will cause inaccurate quantification and thereby skew all analysis.
+ If you have quantified with Salmon this could be normal since it as default only keep one copy of identical sequnces (can be prevented using the --keepDuplicates option)
+ We strongly encurage you to go back and figure out why this is the case.
+
+
+This switchAnalyzeRlist list contains:
+ 131399 isoforms from 30520 genes
+ 1 comparison from 2 conditions (in total 6 samples)
+
+Feature analyzed:
+[1] "ORFs"
+The filtering removed 72873 ( 55.46% of ) transcripts. There is now 58526 isoforms left
+Step 1 of 2: Testing each pairwise comparisons with DEXSeq (this might be a bit slow)...
+    Estimated time (for dataset with ~30.000 isoforms): 1.4 min
+Step 2 of 2: Integrating result into switchAnalyzeRlist...
+    Isoform switch analysis was performed for 10124 gene comparisons (100%).
+Total runtime: 2.77 min
+Done
+Warning message:
+In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+           Comparison nrIsoforms nrSwitches nrGenes
+1 control vs UPF3A_OE         65         61      57
+Step 1 of 4: Extracting genes with isoform switches...
+Step 2 of 4: Analyzing 61 pairwise isoforms comparisons...
+  |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   5%  |                                                                              |=====                                                                 |   7%  |                                                                              |======                                                                |   8%  |                                                                              |=======                                                               |  10%  |                                                                              |========                                                              |  11%  |                                                                              |=========                                                             |  13%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |=============                                                         |  18%  |                                                                              |==============                                                        |  20%  |                                                                              |===============                                                       |  21%  |                                                                              |================                                                      |  23%  |                                                                              |=================                                                     |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |====================                                                  |  28%  |                                                                              |=====================                                                 |  30%  |                                                                              |======================                                                |  31%  |                                                                              |=======================                                               |  33%  |                                                                              |========================                                              |  34%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  38%  |                                                                              |============================                                          |  39%  |                                                                              |=============================                                         |  41%  |                                                                              |==============================                                        |  43%  |                                                                              |===============================                                       |  44%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  49%  |                                                                              |====================================                                  |  51%  |                                                                              |=====================================                                 |  52%  |                                                                              |======================================                                |  54%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  57%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  61%  |                                                                              |============================================                          |  62%  |                                                                              |=============================================                         |  64%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |==================================================                    |  72%  |                                                                              |====================================================                  |  74%  |                                                                              |=====================================================                 |  75%  |                                                                              |======================================================                |  77%  |                                                                              |=======================================================               |  79%  |                                                                              |========================================================              |  80%  |                                                                              |=========================================================             |  82%  |                                                                              |===========================================================           |  84%  |                                                                              |============================================================          |  85%  |                                                                              |=============================================================         |  87%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |===================================================================   |  95%  |                                                                              |====================================================================  |  97%  |                                                                              |===================================================================== |  98%  |                                                                              |======================================================================| 100%
+Step 3 of 4: Massaging isoforms comparisons results...
+Step 4 of 4: Preparing output...
+Identified  genes with containing isoforms switching with functional consequences...
+           Comparison nrIsoforms nrSwitches nrGenes
+1 control vs UPF3A_OE         65         61      57
+           Comparison nrIsoforms nrSwitches nrGenes
+1 control vs UPF3A_OE         10          8       8
+Extracting data...
+Creating 18 plots...
+  |                                                                              |                                                                      |   0%  |                                                                              |====                                                                  |   6%  |                                                                              |========                                                              |  11%  |                                                                              |============                                                          |  17%  |                                                                              |================                                                      |  22%  |                                                                              |===================                                                   |  28%  |                                                                              |=======================                                               |  33%  |                                                                              |===========================                                           |  39%  |                                                                              |===============================                                       |  44%  |                                                                              |===================================                                   |  50%  |                                                                              |=======================================                               |  56%  |                                                                              |===========================================                           |  61%  |                                                                              |===============================================                       |  67%  |                                                                              |===================================================                   |  72%  |                                                                              |======================================================                |  78%  |                                                                              |==========================================================            |  83%  |                                                                              |==============================================================        |  89%  |                                                                              |==================================================================    |  94%  |                                                                              |======================================================================| 100%
+Made 18 plots of genes with isoform switching
+Warning message:
+In .fun(piece, ...) :
+  The chosen n was larger than the number of advailable genes, only advailable genes were considered
+           gene_ref            gene_id gene_name condition_1 condition_2
+1 geneComp_00001343 ENSG00000078140.14     UBE2K     control    UPF3A_OE
+2 geneComp_00010332  ENSG00000163961.4    RNF168     control    UPF3A_OE
+3 geneComp_00012336 ENSG00000173614.14    NMNAT1     control    UPF3A_OE
+4 geneComp_00006948 ENSG00000137522.18    RNF121     control    UPF3A_OE
+5 geneComp_00000655  ENSG00000051382.9    PIK3CB     control    UPF3A_OE
+6 geneComp_00012482 ENSG00000174628.16      IQCK     control    UPF3A_OE
+7 geneComp_00000640 ENSG00000050393.11     MCUR1     control    UPF3A_OE
+8 geneComp_00004850 ENSG00000121578.13   B4GALT4     control    UPF3A_OE
+  gene_switch_q_value switchConsequencesGene Rank
+1        1.069252e-16                   TRUE    1
+2        2.590405e-08                   TRUE    2
+3        1.596553e-05                   TRUE    3
+4        2.642771e-03                   TRUE    4
+5        4.292673e-03                   TRUE    5
+6        1.380618e-02                   TRUE    6
+7        4.397684e-02                   TRUE    7
+8        4.583148e-02                   TRUE    8
+Warning message:
+In .fun(piece, ...) :
+  Less than n genes with significant switches and consequences were found. Returning those.
+null device 
+          1 
+Warning message:
+Removed 22 rows containing missing values (geom_point). 
+null device 
+          1 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Registering fonts with R
+
+********************************************************
+Note: As of version 1.0.0, cowplot does not change the
+  default ggplot2 theme anymore. To recover the previous
+  behavior, execute:
+  theme_set(theme_cowplot())
+********************************************************
+
+Error in combined_heat[, i] : incorrect number of dimensions
+Calls: order
+Execution halted
+
+###################
+## Perform leafcutter alternative splicing analysis
+###################
+
+Leafcutter directory: /home/volker/Tools/leafcutter
+2020-11-30 15:42:54 Converting A006850100_136526 to A006850100_136526.junc
+100000 valid, 7525 problematic spliced reads
+200000 valid, 14459 problematic spliced reads
+300000 valid, 21387 problematic spliced reads
+400000 valid, 27152 problematic spliced reads
+500000 valid, 32395 problematic spliced reads
+600000 valid, 38685 problematic spliced reads
+700000 valid, 45628 problematic spliced reads
+800000 valid, 49938 problematic spliced reads
+900000 valid, 53407 problematic spliced reads
+1000000 valid, 60467 problematic spliced reads
+1100000 valid, 67461 problematic spliced reads
+1200000 valid, 71852 problematic spliced reads
+1300000 valid, 76868 problematic spliced reads
+1400000 valid, 84042 problematic spliced reads
+1500000 valid, 88884 problematic spliced reads
+1600000 valid, 96633 problematic spliced reads
+1700000 valid, 103884 problematic spliced reads
+1800000 valid, 110307 problematic spliced reads
+1900000 valid, 116700 problematic spliced reads
+2000000 valid, 122872 problematic spliced reads
+2100000 valid, 130019 problematic spliced reads
+2200000 valid, 136708 problematic spliced reads
+2300000 valid, 146009 problematic spliced reads
+2400000 valid, 151781 problematic spliced reads
+2500000 valid, 157693 problematic spliced reads
+2600000 valid, 162346 problematic spliced reads
+2700000 valid, 168885 problematic spliced reads
+2800000 valid, 174692 problematic spliced reads
+2900000 valid, 180987 problematic spliced reads
+3000000 valid, 187266 problematic spliced reads
+3100000 valid, 193851 problematic spliced reads
+3200000 valid, 198656 problematic spliced reads
+3300000 valid, 202006 problematic spliced reads
+3400000 valid, 209515 problematic spliced reads
+3500000 valid, 216780 problematic spliced reads
+3600000 valid, 224020 problematic spliced reads
+3700000 valid, 230011 problematic spliced reads
+3800000 valid, 235632 problematic spliced reads
+3900000 valid, 242141 problematic spliced reads
+4000000 valid, 248907 problematic spliced reads
+4100000 valid, 255980 problematic spliced reads
+4200000 valid, 262747 problematic spliced reads
+4300000 valid, 267937 problematic spliced reads
+4400000 valid, 274041 problematic spliced reads
+4500000 valid, 279712 problematic spliced reads
+4600000 valid, 290552 problematic spliced reads
+4700000 valid, 296943 problematic spliced reads
+4800000 valid, 303802 problematic spliced reads
+4900000 valid, 309677 problematic spliced reads
+5000000 valid, 315807 problematic spliced reads
+5100000 valid, 323539 problematic spliced reads
+5200000 valid, 329610 problematic spliced reads
+5300000 valid, 336477 problematic spliced reads
+5400000 valid, 343180 problematic spliced reads
+5500000 valid, 349934 problematic spliced reads
+5600000 valid, 356837 problematic spliced reads
+5700000 valid, 362267 problematic spliced reads
+5800000 valid, 367689 problematic spliced reads
+5900000 valid, 372729 problematic spliced reads
+6000000 valid, 379599 problematic spliced reads
+6100000 valid, 385658 problematic spliced reads
+6200000 valid, 390851 problematic spliced reads
+6300000 valid, 397137 problematic spliced reads
+6400000 valid, 402391 problematic spliced reads
+6500000 valid, 409975 problematic spliced reads
+6600000 valid, 417357 problematic spliced reads
+6700000 valid, 423738 problematic spliced reads
+6800000 valid, 430033 problematic spliced reads
+6900000 valid, 437123 problematic spliced reads
+7000000 valid, 442777 problematic spliced reads
+7100000 valid, 448857 problematic spliced reads
+7200000 valid, 454900 problematic spliced reads
+7300000 valid, 461304 problematic spliced reads
+7400000 valid, 467172 problematic spliced reads
+7500000 valid, 472664 problematic spliced reads
+7600000 valid, 479121 problematic spliced reads
+7700000 valid, 485968 problematic spliced reads
+7800000 valid, 492720 problematic spliced reads
+7900000 valid, 500496 problematic spliced reads
+8000000 valid, 506728 problematic spliced reads
+8100000 valid, 513480 problematic spliced reads
+8200000 valid, 521455 problematic spliced reads
+8300000 valid, 528708 problematic spliced reads
+8400000 valid, 535714 problematic spliced reads
+8500000 valid, 541893 problematic spliced reads
+8600000 valid, 546517 problematic spliced reads
+8700000 valid, 552969 problematic spliced reads
+8800000 valid, 559350 problematic spliced reads
+8900000 valid, 566364 problematic spliced reads
+9000000 valid, 573005 problematic spliced reads
+9100000 valid, 579201 problematic spliced reads
+9200000 valid, 585323 problematic spliced reads
+9300000 valid, 591811 problematic spliced reads
+9400000 valid, 597900 problematic spliced reads
+9500000 valid, 603696 problematic spliced reads
+9600000 valid, 610910 problematic spliced reads
+9700000 valid, 616590 problematic spliced reads
+9800000 valid, 623549 problematic spliced reads
+9900000 valid, 630500 problematic spliced reads
+10000000 valid, 637719 problematic spliced reads
+10100000 valid, 642420 problematic spliced reads
+10200000 valid, 647172 problematic spliced reads
+10300000 valid, 652653 problematic spliced reads
+10400000 valid, 657027 problematic spliced reads
+10500000 valid, 661409 problematic spliced reads
+10600000 valid, 668670 problematic spliced reads
+10700000 valid, 675317 problematic spliced reads
+10800000 valid, 682210 problematic spliced reads
+10900000 valid, 687424 problematic spliced reads
+11000000 valid, 692571 problematic spliced reads
+11100000 valid, 702321 problematic spliced reads
+11200000 valid, 707925 problematic spliced reads
+11300000 valid, 715586 problematic spliced reads
+11400000 valid, 720791 problematic spliced reads
+11500000 valid, 726454 problematic spliced reads
+11600000 valid, 732223 problematic spliced reads
+11700000 valid, 738257 problematic spliced reads
+11800000 valid, 743851 problematic spliced reads
+11900000 valid, 749654 problematic spliced reads
+12000000 valid, 756638 problematic spliced reads
+12100000 valid, 763260 problematic spliced reads
+12200000 valid, 772139 problematic spliced reads
+12300000 valid, 783162 problematic spliced reads
+12400000 valid, 789373 problematic spliced reads
+12500000 valid, 794953 problematic spliced reads
+12600000 valid, 801600 problematic spliced reads
+12700000 valid, 808073 problematic spliced reads
+12800000 valid, 814718 problematic spliced reads
+12900000 valid, 820962 problematic spliced reads
+13000000 valid, 826393 problematic spliced reads
+13100000 valid, 833105 problematic spliced reads
+13200000 valid, 840678 problematic spliced reads
+13300000 valid, 846208 problematic spliced reads
+13400000 valid, 852073 problematic spliced reads
+13500000 valid, 858199 problematic spliced reads
+13600000 valid, 865545 problematic spliced reads
+13700000 valid, 875019 problematic spliced reads
+13800000 valid, 879769 problematic spliced reads
+13900000 valid, 886196 problematic spliced reads
+14000000 valid, 892747 problematic spliced reads
+14100000 valid, 896190 problematic spliced reads
+14200000 valid, 904430 problematic spliced reads
+14300000 valid, 910275 problematic spliced reads
+14400000 valid, 916673 problematic spliced reads
+14500000 valid, 923798 problematic spliced reads
+14600000 valid, 934340 problematic spliced reads
+14700000 valid, 940992 problematic spliced reads
+14800000 valid, 952462 problematic spliced reads
+14900000 valid, 955026 problematic spliced reads
+15000000 valid, 964816 problematic spliced reads
+15100000 valid, 970285 problematic spliced reads
+15200000 valid, 975102 problematic spliced reads
+15300000 valid, 981056 problematic spliced reads
+15400000 valid, 989970 problematic spliced reads
+15500000 valid, 996292 problematic spliced reads
+15600000 valid, 1003924 problematic spliced reads
+15700000 valid, 1009594 problematic spliced reads
+15800000 valid, 1016101 problematic spliced reads
+15900000 valid, 1026413 problematic spliced reads
+16000000 valid, 1031417 problematic spliced reads
+16100000 valid, 1038635 problematic spliced reads
+16200000 valid, 1045827 problematic spliced reads
+16300000 valid, 1051603 problematic spliced reads
+16400000 valid, 1058903 problematic spliced reads
+16500000 valid, 1064504 problematic spliced reads
+16600000 valid, 1072464 problematic spliced reads
+16700000 valid, 1077881 problematic spliced reads
+16800000 valid, 1084082 problematic spliced reads
+16900000 valid, 1088105 problematic spliced reads
+17000000 valid, 1094311 problematic spliced reads
+17100000 valid, 1102128 problematic spliced reads
+17200000 valid, 1108491 problematic spliced reads
+17300000 valid, 1116472 problematic spliced reads
+17400000 valid, 1122116 problematic spliced reads
+17500000 valid, 1128370 problematic spliced reads
+17600000 valid, 1141578 problematic spliced reads
+17700000 valid, 1151223 problematic spliced reads
+17800000 valid, 1156442 problematic spliced reads
+17900000 valid, 1160117 problematic spliced reads
+18000000 valid, 1164577 problematic spliced reads
+18100000 valid, 1168460 problematic spliced reads
+18200000 valid, 1174256 problematic spliced reads
+18300000 valid, 1180186 problematic spliced reads
+18400000 valid, 1186810 problematic spliced reads
+18500000 valid, 1192724 problematic spliced reads
+18600000 valid, 1203580 problematic spliced reads
+18700000 valid, 1211110 problematic spliced reads
+18800000 valid, 1219416 problematic spliced reads
+18900000 valid, 1225693 problematic spliced reads
+19000000 valid, 1231645 problematic spliced reads
+19100000 valid, 1238641 problematic spliced reads
+19200000 valid, 1244779 problematic spliced reads
+19300000 valid, 1250612 problematic spliced reads
+19400000 valid, 1256846 problematic spliced reads
+19500000 valid, 1261449 problematic spliced reads
+19600000 valid, 1267854 problematic spliced reads
+19700000 valid, 1272487 problematic spliced reads
+19800000 valid, 1277277 problematic spliced reads
+19900000 valid, 1282459 problematic spliced reads
+20000000 valid, 1288690 problematic spliced reads
+20100000 valid, 1296313 problematic spliced reads
+2020-11-30 16:03:02 Converting A006850100_136528 to A006850100_136528.junc
+100000 valid, 7318 problematic spliced reads
+200000 valid, 14598 problematic spliced reads
+300000 valid, 20863 problematic spliced reads
+400000 valid, 25620 problematic spliced reads
+500000 valid, 31443 problematic spliced reads
+600000 valid, 38262 problematic spliced reads
+700000 valid, 42215 problematic spliced reads
+800000 valid, 46806 problematic spliced reads
+900000 valid, 53689 problematic spliced reads
+1000000 valid, 58803 problematic spliced reads
+1100000 valid, 64322 problematic spliced reads
+1200000 valid, 70716 problematic spliced reads
+1300000 valid, 75840 problematic spliced reads
+1400000 valid, 83321 problematic spliced reads
+1500000 valid, 90448 problematic spliced reads
+1600000 valid, 96774 problematic spliced reads
+1700000 valid, 103761 problematic spliced reads
+1800000 valid, 110976 problematic spliced reads
+1900000 valid, 117159 problematic spliced reads
+2000000 valid, 125892 problematic spliced reads
+2100000 valid, 131286 problematic spliced reads
+2200000 valid, 136663 problematic spliced reads
+2300000 valid, 142580 problematic spliced reads
+2400000 valid, 148966 problematic spliced reads
+2500000 valid, 155143 problematic spliced reads
+2600000 valid, 160680 problematic spliced reads
+2700000 valid, 167490 problematic spliced reads
+2800000 valid, 172376 problematic spliced reads
+2900000 valid, 175935 problematic spliced reads
+3000000 valid, 183421 problematic spliced reads
+3100000 valid, 190783 problematic spliced reads
+3200000 valid, 197718 problematic spliced reads
+3300000 valid, 203755 problematic spliced reads
+3400000 valid, 209468 problematic spliced reads
+3500000 valid, 215619 problematic spliced reads
+3600000 valid, 223498 problematic spliced reads
+3700000 valid, 230188 problematic spliced reads
+3800000 valid, 234766 problematic spliced reads
+3900000 valid, 240745 problematic spliced reads
+4000000 valid, 251511 problematic spliced reads
+4100000 valid, 257288 problematic spliced reads
+4200000 valid, 263865 problematic spliced reads
+4300000 valid, 269770 problematic spliced reads
+4400000 valid, 276176 problematic spliced reads
+4500000 valid, 283825 problematic spliced reads
+4600000 valid, 289225 problematic spliced reads
+4700000 valid, 296935 problematic spliced reads
+4800000 valid, 303464 problematic spliced reads
+4900000 valid, 310052 problematic spliced reads
+5000000 valid, 316075 problematic spliced reads
+5100000 valid, 321606 problematic spliced reads
+5200000 valid, 326192 problematic spliced reads
+5300000 valid, 332964 problematic spliced reads
+5400000 valid, 339025 problematic spliced reads
+5500000 valid, 343997 problematic spliced reads
+5600000 valid, 349672 problematic spliced reads
+5700000 valid, 356851 problematic spliced reads
+5800000 valid, 364266 problematic spliced reads
+5900000 valid, 370499 problematic spliced reads
+6000000 valid, 376556 problematic spliced reads
+6100000 valid, 384465 problematic spliced reads
+6200000 valid, 389104 problematic spliced reads
+6300000 valid, 395245 problematic spliced reads
+6400000 valid, 401611 problematic spliced reads
+6500000 valid, 407508 problematic spliced reads
+6600000 valid, 413026 problematic spliced reads
+6700000 valid, 418935 problematic spliced reads
+6800000 valid, 426046 problematic spliced reads
+6900000 valid, 432803 problematic spliced reads
+7000000 valid, 440295 problematic spliced reads
+7100000 valid, 446922 problematic spliced reads
+7200000 valid, 453516 problematic spliced reads
+7300000 valid, 461709 problematic spliced reads
+7400000 valid, 468841 problematic spliced reads
+7500000 valid, 474968 problematic spliced reads
+7600000 valid, 480171 problematic spliced reads
+7700000 valid, 486288 problematic spliced reads
+7800000 valid, 493257 problematic spliced reads
+7900000 valid, 499965 problematic spliced reads
+8000000 valid, 506284 problematic spliced reads
+8100000 valid, 512540 problematic spliced reads
+8200000 valid, 519034 problematic spliced reads
+8300000 valid, 524957 problematic spliced reads
+8400000 valid, 531178 problematic spliced reads
+8500000 valid, 537452 problematic spliced reads
+8600000 valid, 544080 problematic spliced reads
+8700000 valid, 550890 problematic spliced reads
+8800000 valid, 557576 problematic spliced reads
+8900000 valid, 561625 problematic spliced reads
+9000000 valid, 567445 problematic spliced reads
+9100000 valid, 572242 problematic spliced reads
+9200000 valid, 576294 problematic spliced reads
+9300000 valid, 583641 problematic spliced reads
+9400000 valid, 590879 problematic spliced reads
+9500000 valid, 596592 problematic spliced reads
+9600000 valid, 602200 problematic spliced reads
+9700000 valid, 608482 problematic spliced reads
+9800000 valid, 616862 problematic spliced reads
+9900000 valid, 624121 problematic spliced reads
+10000000 valid, 629389 problematic spliced reads
+10100000 valid, 635034 problematic spliced reads
+10200000 valid, 640859 problematic spliced reads
+10300000 valid, 646475 problematic spliced reads
+10400000 valid, 651658 problematic spliced reads
+10500000 valid, 658482 problematic spliced reads
+10600000 valid, 664803 problematic spliced reads
+10700000 valid, 673091 problematic spliced reads
+10800000 valid, 683142 problematic spliced reads
+10900000 valid, 689381 problematic spliced reads
+11000000 valid, 695106 problematic spliced reads
+11100000 valid, 701584 problematic spliced reads
+11200000 valid, 708540 problematic spliced reads
+11300000 valid, 714891 problematic spliced reads
+11400000 valid, 720123 problematic spliced reads
+11500000 valid, 726973 problematic spliced reads
+11600000 valid, 734045 problematic spliced reads
+11700000 valid, 739454 problematic spliced reads
+11800000 valid, 745014 problematic spliced reads
+11900000 valid, 752042 problematic spliced reads
+12000000 valid, 761064 problematic spliced reads
+12100000 valid, 765936 problematic spliced reads
+12200000 valid, 772346 problematic spliced reads
+12300000 valid, 778662 problematic spliced reads
+12400000 valid, 784523 problematic spliced reads
+12500000 valid, 790947 problematic spliced reads
+12600000 valid, 796663 problematic spliced reads
+12700000 valid, 803552 problematic spliced reads
+12800000 valid, 812648 problematic spliced reads
+12900000 valid, 819661 problematic spliced reads
+13000000 valid, 829022 problematic spliced reads
+13100000 valid, 834926 problematic spliced reads
+13200000 valid, 842675 problematic spliced reads
+13300000 valid, 847656 problematic spliced reads
+13400000 valid, 853113 problematic spliced reads
+13500000 valid, 862273 problematic spliced reads
+13600000 valid, 868391 problematic spliced reads
+13700000 valid, 875790 problematic spliced reads
+13800000 valid, 882102 problematic spliced reads
+13900000 valid, 892084 problematic spliced reads
+14000000 valid, 897298 problematic spliced reads
+14100000 valid, 904307 problematic spliced reads
+14200000 valid, 911680 problematic spliced reads
+14300000 valid, 917949 problematic spliced reads
+14400000 valid, 923284 problematic spliced reads
+14500000 valid, 931322 problematic spliced reads
+14600000 valid, 936566 problematic spliced reads
+14700000 valid, 942684 problematic spliced reads
+14800000 valid, 947696 problematic spliced reads
+14900000 valid, 955303 problematic spliced reads
+15000000 valid, 961615 problematic spliced reads
+15100000 valid, 969284 problematic spliced reads
+15200000 valid, 977535 problematic spliced reads
+15300000 valid, 987330 problematic spliced reads
+15400000 valid, 996562 problematic spliced reads
+15500000 valid, 1002844 problematic spliced reads
+15600000 valid, 1006464 problematic spliced reads
+15700000 valid, 1011020 problematic spliced reads
+15800000 valid, 1014682 problematic spliced reads
+15900000 valid, 1021145 problematic spliced reads
+16000000 valid, 1027829 problematic spliced reads
+16100000 valid, 1033159 problematic spliced reads
+16200000 valid, 1043648 problematic spliced reads
+16300000 valid, 1051051 problematic spliced reads
+16400000 valid, 1059292 problematic spliced reads
+16500000 valid, 1064806 problematic spliced reads
+16600000 valid, 1071730 problematic spliced reads
+16700000 valid, 1077434 problematic spliced reads
+16800000 valid, 1083642 problematic spliced reads
+16900000 valid, 1089712 problematic spliced reads
+17000000 valid, 1094461 problematic spliced reads
+17100000 valid, 1100303 problematic spliced reads
+17200000 valid, 1105770 problematic spliced reads
+17300000 valid, 1110416 problematic spliced reads
+17400000 valid, 1116499 problematic spliced reads
+17500000 valid, 1123368 problematic spliced reads
+2020-11-30 16:21:36 Converting A006850100_136530 to A006850100_136530.junc
+100000 valid, 7168 problematic spliced reads
+200000 valid, 14278 problematic spliced reads
+300000 valid, 20372 problematic spliced reads
+400000 valid, 24856 problematic spliced reads
+500000 valid, 30865 problematic spliced reads
+600000 valid, 37670 problematic spliced reads
+700000 valid, 41582 problematic spliced reads
+800000 valid, 46121 problematic spliced reads
+900000 valid, 52913 problematic spliced reads
+1000000 valid, 57908 problematic spliced reads
+1100000 valid, 63287 problematic spliced reads
+1200000 valid, 69521 problematic spliced reads
+1300000 valid, 75136 problematic spliced reads
+1400000 valid, 82155 problematic spliced reads
+1500000 valid, 89233 problematic spliced reads
+1600000 valid, 95398 problematic spliced reads
+1700000 valid, 102168 problematic spliced reads
+1800000 valid, 109194 problematic spliced reads
+1900000 valid, 115384 problematic spliced reads
+2000000 valid, 122073 problematic spliced reads
+2100000 valid, 128894 problematic spliced reads
+2200000 valid, 134446 problematic spliced reads
+2300000 valid, 140144 problematic spliced reads
+2400000 valid, 146031 problematic spliced reads
+2500000 valid, 152450 problematic spliced reads
+2600000 valid, 157954 problematic spliced reads
+2700000 valid, 164349 problematic spliced reads
+2800000 valid, 169111 problematic spliced reads
+2900000 valid, 172920 problematic spliced reads
+3000000 valid, 180068 problematic spliced reads
+3100000 valid, 187432 problematic spliced reads
+3200000 valid, 194004 problematic spliced reads
+3300000 valid, 199917 problematic spliced reads
+3400000 valid, 205852 problematic spliced reads
+3500000 valid, 211823 problematic spliced reads
+3600000 valid, 218935 problematic spliced reads
+3700000 valid, 225582 problematic spliced reads
+3800000 valid, 230557 problematic spliced reads
+3900000 valid, 236185 problematic spliced reads
+4000000 valid, 246958 problematic spliced reads
+4100000 valid, 252369 problematic spliced reads
+4200000 valid, 258864 problematic spliced reads
+4300000 valid, 264698 problematic spliced reads
+4400000 valid, 270761 problematic spliced reads
+4500000 valid, 278305 problematic spliced reads
+4600000 valid, 283562 problematic spliced reads
+4700000 valid, 291025 problematic spliced reads
+4800000 valid, 297073 problematic spliced reads
+4900000 valid, 303430 problematic spliced reads
+5000000 valid, 309379 problematic spliced reads
+5100000 valid, 314781 problematic spliced reads
+5200000 valid, 319187 problematic spliced reads
+5300000 valid, 325960 problematic spliced reads
+5400000 valid, 331633 problematic spliced reads
+5500000 valid, 336472 problematic spliced reads
+5600000 valid, 341944 problematic spliced reads
+5700000 valid, 348674 problematic spliced reads
+5800000 valid, 355516 problematic spliced reads
+5900000 valid, 361847 problematic spliced reads
+6000000 valid, 367539 problematic spliced reads
+6100000 valid, 375126 problematic spliced reads
+6200000 valid, 379903 problematic spliced reads
+6300000 valid, 385846 problematic spliced reads
+6400000 valid, 391986 problematic spliced reads
+6500000 valid, 397781 problematic spliced reads
+6600000 valid, 403174 problematic spliced reads
+6700000 valid, 408876 problematic spliced reads
+6800000 valid, 415808 problematic spliced reads
+6900000 valid, 422048 problematic spliced reads
+7000000 valid, 429162 problematic spliced reads
+7100000 valid, 435255 problematic spliced reads
+7200000 valid, 441130 problematic spliced reads
+7300000 valid, 448978 problematic spliced reads
+7400000 valid, 455955 problematic spliced reads
+7500000 valid, 462223 problematic spliced reads
+7600000 valid, 465770 problematic spliced reads
+7700000 valid, 473559 problematic spliced reads
+7800000 valid, 480576 problematic spliced reads
+7900000 valid, 486760 problematic spliced reads
+8000000 valid, 493654 problematic spliced reads
+8100000 valid, 499475 problematic spliced reads
+8200000 valid, 505845 problematic spliced reads
+8300000 valid, 511760 problematic spliced reads
+8400000 valid, 517897 problematic spliced reads
+8500000 valid, 523897 problematic spliced reads
+8600000 valid, 530497 problematic spliced reads
+8700000 valid, 536656 problematic spliced reads
+8800000 valid, 543740 problematic spliced reads
+8900000 valid, 547645 problematic spliced reads
+9000000 valid, 553307 problematic spliced reads
+9100000 valid, 558459 problematic spliced reads
+9200000 valid, 562741 problematic spliced reads
+9300000 valid, 569720 problematic spliced reads
+9400000 valid, 576415 problematic spliced reads
+9500000 valid, 582196 problematic spliced reads
+9600000 valid, 587987 problematic spliced reads
+9700000 valid, 593743 problematic spliced reads
+9800000 valid, 601833 problematic spliced reads
+9900000 valid, 608619 problematic spliced reads
+10000000 valid, 614044 problematic spliced reads
+10100000 valid, 619599 problematic spliced reads
+10200000 valid, 624801 problematic spliced reads
+10300000 valid, 630530 problematic spliced reads
+10400000 valid, 635863 problematic spliced reads
+10500000 valid, 642431 problematic spliced reads
+10600000 valid, 648760 problematic spliced reads
+10700000 valid, 657250 problematic spliced reads
+10800000 valid, 665381 problematic spliced reads
+10900000 valid, 671467 problematic spliced reads
+11000000 valid, 676941 problematic spliced reads
+11100000 valid, 683228 problematic spliced reads
+11200000 valid, 689994 problematic spliced reads
+11300000 valid, 696568 problematic spliced reads
+11400000 valid, 701043 problematic spliced reads
+11500000 valid, 707098 problematic spliced reads
+11600000 valid, 714733 problematic spliced reads
+11700000 valid, 720145 problematic spliced reads
+11800000 valid, 724579 problematic spliced reads
+11900000 valid, 731645 problematic spliced reads
+12000000 valid, 740347 problematic spliced reads
+12100000 valid, 745257 problematic spliced reads
+12200000 valid, 751517 problematic spliced reads
+12300000 valid, 757632 problematic spliced reads
+12400000 valid, 762911 problematic spliced reads
+12500000 valid, 769219 problematic spliced reads
+12600000 valid, 774622 problematic spliced reads
+12700000 valid, 781651 problematic spliced reads
+12800000 valid, 790376 problematic spliced reads
+12900000 valid, 797206 problematic spliced reads
+13000000 valid, 807077 problematic spliced reads
+13100000 valid, 812439 problematic spliced reads
+13200000 valid, 819429 problematic spliced reads
+13300000 valid, 825006 problematic spliced reads
+13400000 valid, 830002 problematic spliced reads
+13500000 valid, 838625 problematic spliced reads
+13600000 valid, 844218 problematic spliced reads
+13700000 valid, 851697 problematic spliced reads
+13800000 valid, 857737 problematic spliced reads
+13900000 valid, 867418 problematic spliced reads
+14000000 valid, 872727 problematic spliced reads
+14100000 valid, 879447 problematic spliced reads
+14200000 valid, 886133 problematic spliced reads
+14300000 valid, 891479 problematic spliced reads
+14400000 valid, 897459 problematic spliced reads
+14500000 valid, 905600 problematic spliced reads
+14600000 valid, 910575 problematic spliced reads
+14700000 valid, 916845 problematic spliced reads
+14800000 valid, 921852 problematic spliced reads
+14900000 valid, 929216 problematic spliced reads
+15000000 valid, 935438 problematic spliced reads
+15100000 valid, 942964 problematic spliced reads
+15200000 valid, 951188 problematic spliced reads
+15300000 valid, 959760 problematic spliced reads
+15400000 valid, 968705 problematic spliced reads
+15500000 valid, 974813 problematic spliced reads
+15600000 valid, 978387 problematic spliced reads
+15700000 valid, 983007 problematic spliced reads
+15800000 valid, 986618 problematic spliced reads
+15900000 valid, 992668 problematic spliced reads
+16000000 valid, 999191 problematic spliced reads
+16100000 valid, 1004453 problematic spliced reads
+16200000 valid, 1015133 problematic spliced reads
+16300000 valid, 1022571 problematic spliced reads
+16400000 valid, 1030140 problematic spliced reads
+16500000 valid, 1035623 problematic spliced reads
+16600000 valid, 1042457 problematic spliced reads
+16700000 valid, 1048105 problematic spliced reads
+16800000 valid, 1053882 problematic spliced reads
+16900000 valid, 1059972 problematic spliced reads
+17000000 valid, 1064656 problematic spliced reads
+17100000 valid, 1070355 problematic spliced reads
+17200000 valid, 1075618 problematic spliced reads
+17300000 valid, 1080267 problematic spliced reads
+17400000 valid, 1086254 problematic spliced reads
+17500000 valid, 1092620 problematic spliced reads
+2020-11-30 16:39:33 Converting A006850100_136532 to A006850100_136532.junc
+100000 valid, 6928 problematic spliced reads
+200000 valid, 13926 problematic spliced reads
+300000 valid, 19265 problematic spliced reads
+400000 valid, 25244 problematic spliced reads
+500000 valid, 31578 problematic spliced reads
+600000 valid, 35870 problematic spliced reads
+700000 valid, 41429 problematic spliced reads
+800000 valid, 47895 problematic spliced reads
+900000 valid, 52753 problematic spliced reads
+1000000 valid, 58040 problematic spliced reads
+1100000 valid, 63714 problematic spliced reads
+1200000 valid, 70846 problematic spliced reads
+1300000 valid, 78285 problematic spliced reads
+1400000 valid, 84882 problematic spliced reads
+1500000 valid, 91579 problematic spliced reads
+1600000 valid, 97877 problematic spliced reads
+1700000 valid, 105679 problematic spliced reads
+1800000 valid, 111271 problematic spliced reads
+1900000 valid, 116649 problematic spliced reads
+2000000 valid, 123140 problematic spliced reads
+2100000 valid, 129169 problematic spliced reads
+2200000 valid, 135117 problematic spliced reads
+2300000 valid, 141302 problematic spliced reads
+2400000 valid, 144951 problematic spliced reads
+2500000 valid, 151507 problematic spliced reads
+2600000 valid, 158560 problematic spliced reads
+2700000 valid, 165347 problematic spliced reads
+2800000 valid, 170664 problematic spliced reads
+2900000 valid, 177396 problematic spliced reads
+3000000 valid, 184624 problematic spliced reads
+3100000 valid, 191478 problematic spliced reads
+3200000 valid, 196473 problematic spliced reads
+3300000 valid, 202353 problematic spliced reads
+3400000 valid, 211594 problematic spliced reads
+3500000 valid, 218176 problematic spliced reads
+3600000 valid, 224006 problematic spliced reads
+3700000 valid, 230424 problematic spliced reads
+3800000 valid, 238028 problematic spliced reads
+3900000 valid, 244512 problematic spliced reads
+4000000 valid, 250895 problematic spliced reads
+4100000 valid, 257449 problematic spliced reads
+4200000 valid, 263461 problematic spliced reads
+4300000 valid, 267434 problematic spliced reads
+4400000 valid, 274252 problematic spliced reads
+4500000 valid, 280739 problematic spliced reads
+4600000 valid, 285520 problematic spliced reads
+4700000 valid, 291121 problematic spliced reads
+4800000 valid, 298732 problematic spliced reads
+4900000 valid, 305210 problematic spliced reads
+5000000 valid, 311120 problematic spliced reads
+5100000 valid, 318317 problematic spliced reads
+5200000 valid, 323451 problematic spliced reads
+5300000 valid, 329522 problematic spliced reads
+5400000 valid, 335746 problematic spliced reads
+5500000 valid, 341292 problematic spliced reads
+5600000 valid, 347341 problematic spliced reads
+5700000 valid, 354366 problematic spliced reads
+5800000 valid, 361330 problematic spliced reads
+5900000 valid, 367428 problematic spliced reads
+6000000 valid, 373946 problematic spliced reads
+6100000 valid, 381808 problematic spliced reads
+6200000 valid, 388803 problematic spliced reads
+6300000 valid, 394533 problematic spliced reads
+6400000 valid, 400501 problematic spliced reads
+6500000 valid, 406735 problematic spliced reads
+6600000 valid, 413656 problematic spliced reads
+6700000 valid, 420219 problematic spliced reads
+6800000 valid, 426606 problematic spliced reads
+6900000 valid, 432931 problematic spliced reads
+7000000 valid, 438651 problematic spliced reads
+7100000 valid, 445393 problematic spliced reads
+7200000 valid, 451837 problematic spliced reads
+7300000 valid, 458409 problematic spliced reads
+7400000 valid, 464898 problematic spliced reads
+7500000 valid, 469226 problematic spliced reads
+7600000 valid, 474561 problematic spliced reads
+7700000 valid, 478709 problematic spliced reads
+7800000 valid, 485562 problematic spliced reads
+7900000 valid, 492622 problematic spliced reads
+8000000 valid, 498157 problematic spliced reads
+8100000 valid, 503939 problematic spliced reads
+8200000 valid, 512128 problematic spliced reads
+8300000 valid, 519105 problematic spliced reads
+8400000 valid, 524344 problematic spliced reads
+8500000 valid, 529842 problematic spliced reads
+8600000 valid, 535696 problematic spliced reads
+8700000 valid, 541182 problematic spliced reads
+8800000 valid, 547889 problematic spliced reads
+8900000 valid, 553421 problematic spliced reads
+9000000 valid, 561426 problematic spliced reads
+9100000 valid, 570902 problematic spliced reads
+9200000 valid, 576780 problematic spliced reads
+9300000 valid, 582974 problematic spliced reads
+9400000 valid, 589853 problematic spliced reads
+9500000 valid, 596014 problematic spliced reads
+9600000 valid, 600945 problematic spliced reads
+9700000 valid, 608248 problematic spliced reads
+9800000 valid, 614296 problematic spliced reads
+9900000 valid, 619582 problematic spliced reads
+10000000 valid, 626403 problematic spliced reads
+10100000 valid, 635186 problematic spliced reads
+10200000 valid, 640354 problematic spliced reads
+10300000 valid, 646749 problematic spliced reads
+10400000 valid, 652277 problematic spliced reads
+10500000 valid, 658713 problematic spliced reads
+10600000 valid, 664872 problematic spliced reads
+10700000 valid, 671853 problematic spliced reads
+10800000 valid, 680921 problematic spliced reads
+10900000 valid, 691374 problematic spliced reads
+11000000 valid, 695624 problematic spliced reads
+11100000 valid, 703045 problematic spliced reads
+11200000 valid, 708300 problematic spliced reads
+11300000 valid, 715957 problematic spliced reads
+11400000 valid, 722677 problematic spliced reads
+11500000 valid, 729964 problematic spliced reads
+11600000 valid, 736217 problematic spliced reads
+11700000 valid, 745371 problematic spliced reads
+11800000 valid, 751743 problematic spliced reads
+11900000 valid, 757555 problematic spliced reads
+12000000 valid, 763963 problematic spliced reads
+12100000 valid, 769931 problematic spliced reads
+12200000 valid, 777930 problematic spliced reads
+12300000 valid, 783431 problematic spliced reads
+12400000 valid, 788891 problematic spliced reads
+12500000 valid, 795173 problematic spliced reads
+12600000 valid, 801678 problematic spliced reads
+12700000 valid, 808885 problematic spliced reads
+12800000 valid, 817489 problematic spliced reads
+12900000 valid, 826399 problematic spliced reads
+13000000 valid, 835049 problematic spliced reads
+13100000 valid, 839653 problematic spliced reads
+13200000 valid, 844278 problematic spliced reads
+13300000 valid, 848335 problematic spliced reads
+13400000 valid, 854439 problematic spliced reads
+13500000 valid, 860768 problematic spliced reads
+13600000 valid, 866805 problematic spliced reads
+13700000 valid, 877492 problematic spliced reads
+13800000 valid, 885060 problematic spliced reads
+13900000 valid, 891062 problematic spliced reads
+14000000 valid, 897974 problematic spliced reads
+14100000 valid, 904051 problematic spliced reads
+14200000 valid, 909907 problematic spliced reads
+14300000 valid, 914914 problematic spliced reads
+14400000 valid, 920930 problematic spliced reads
+14500000 valid, 926004 problematic spliced reads
+14600000 valid, 931086 problematic spliced reads
+14700000 valid, 937400 problematic spliced reads
+14800000 valid, 943530 problematic spliced reads
+2020-11-30 16:55:20 Converting A006850100_136534 to A006850100_136534.junc
+100000 valid, 7021 problematic spliced reads
+200000 valid, 14111 problematic spliced reads
+300000 valid, 20115 problematic spliced reads
+400000 valid, 24263 problematic spliced reads
+500000 valid, 30542 problematic spliced reads
+600000 valid, 36993 problematic spliced reads
+700000 valid, 42213 problematic spliced reads
+800000 valid, 45705 problematic spliced reads
+900000 valid, 52491 problematic spliced reads
+1000000 valid, 58798 problematic spliced reads
+1100000 valid, 63689 problematic spliced reads
+1200000 valid, 68781 problematic spliced reads
+1300000 valid, 75071 problematic spliced reads
+1400000 valid, 81114 problematic spliced reads
+1500000 valid, 87675 problematic spliced reads
+1600000 valid, 95423 problematic spliced reads
+1700000 valid, 101832 problematic spliced reads
+1800000 valid, 108454 problematic spliced reads
+1900000 valid, 115280 problematic spliced reads
+2000000 valid, 121577 problematic spliced reads
+2100000 valid, 130156 problematic spliced reads
+2200000 valid, 135617 problematic spliced reads
+2300000 valid, 141314 problematic spliced reads
+2400000 valid, 146860 problematic spliced reads
+2500000 valid, 153115 problematic spliced reads
+2600000 valid, 158161 problematic spliced reads
+2700000 valid, 164919 problematic spliced reads
+2800000 valid, 171681 problematic spliced reads
+2900000 valid, 177374 problematic spliced reads
+3000000 valid, 180735 problematic spliced reads
+3100000 valid, 187160 problematic spliced reads
+3200000 valid, 194636 problematic spliced reads
+3300000 valid, 201699 problematic spliced reads
+3400000 valid, 207616 problematic spliced reads
+3500000 valid, 213031 problematic spliced reads
+3600000 valid, 219523 problematic spliced reads
+3700000 valid, 225767 problematic spliced reads
+3800000 valid, 232813 problematic spliced reads
+3900000 valid, 239470 problematic spliced reads
+4000000 valid, 244047 problematic spliced reads
+4100000 valid, 249728 problematic spliced reads
+4200000 valid, 259975 problematic spliced reads
+4300000 valid, 265890 problematic spliced reads
+4400000 valid, 272278 problematic spliced reads
+4500000 valid, 278551 problematic spliced reads
+4600000 valid, 284372 problematic spliced reads
+4700000 valid, 291046 problematic spliced reads
+4800000 valid, 298009 problematic spliced reads
+4900000 valid, 304808 problematic spliced reads
+5000000 valid, 311399 problematic spliced reads
+5100000 valid, 317399 problematic spliced reads
+5200000 valid, 323490 problematic spliced reads
+5300000 valid, 328950 problematic spliced reads
+5400000 valid, 332408 problematic spliced reads
+5500000 valid, 339511 problematic spliced reads
+5600000 valid, 346072 problematic spliced reads
+5700000 valid, 351158 problematic spliced reads
+5800000 valid, 357077 problematic spliced reads
+5900000 valid, 361762 problematic spliced reads
+6000000 valid, 368818 problematic spliced reads
+6100000 valid, 376111 problematic spliced reads
+6200000 valid, 382373 problematic spliced reads
+6300000 valid, 388488 problematic spliced reads
+6400000 valid, 395885 problematic spliced reads
+6500000 valid, 400850 problematic spliced reads
+6600000 valid, 406711 problematic spliced reads
+6700000 valid, 413163 problematic spliced reads
+6800000 valid, 419055 problematic spliced reads
+6900000 valid, 424288 problematic spliced reads
+7000000 valid, 430410 problematic spliced reads
+7100000 valid, 436890 problematic spliced reads
+7200000 valid, 443377 problematic spliced reads
+7300000 valid, 450658 problematic spliced reads
+7400000 valid, 456226 problematic spliced reads
+7500000 valid, 462765 problematic spliced reads
+7600000 valid, 470549 problematic spliced reads
+7700000 valid, 477211 problematic spliced reads
+7800000 valid, 484017 problematic spliced reads
+7900000 valid, 489981 problematic spliced reads
+8000000 valid, 495651 problematic spliced reads
+8100000 valid, 501695 problematic spliced reads
+8200000 valid, 508791 problematic spliced reads
+8300000 valid, 515424 problematic spliced reads
+8400000 valid, 521702 problematic spliced reads
+8500000 valid, 527706 problematic spliced reads
+8600000 valid, 534030 problematic spliced reads
+8700000 valid, 539960 problematic spliced reads
+8800000 valid, 546564 problematic spliced reads
+8900000 valid, 552327 problematic spliced reads
+9000000 valid, 558708 problematic spliced reads
+9100000 valid, 564673 problematic spliced reads
+9200000 valid, 572268 problematic spliced reads
+9300000 valid, 577123 problematic spliced reads
+9400000 valid, 582154 problematic spliced reads
+9500000 valid, 587594 problematic spliced reads
+9600000 valid, 591463 problematic spliced reads
+9700000 valid, 596945 problematic spliced reads
+9800000 valid, 604178 problematic spliced reads
+9900000 valid, 611137 problematic spliced reads
+10000000 valid, 616170 problematic spliced reads
+10100000 valid, 622028 problematic spliced reads
+10200000 valid, 628944 problematic spliced reads
+10300000 valid, 636351 problematic spliced reads
+10400000 valid, 643810 problematic spliced reads
+10500000 valid, 649173 problematic spliced reads
+10600000 valid, 654592 problematic spliced reads
+10700000 valid, 659825 problematic spliced reads
+10800000 valid, 665588 problematic spliced reads
+10900000 valid, 670897 problematic spliced reads
+11000000 valid, 677581 problematic spliced reads
+11100000 valid, 684046 problematic spliced reads
+11200000 valid, 690304 problematic spliced reads
+11300000 valid, 697888 problematic spliced reads
+11400000 valid, 706033 problematic spliced reads
+11500000 valid, 712292 problematic spliced reads
+11600000 valid, 717659 problematic spliced reads
+11700000 valid, 724049 problematic spliced reads
+11800000 valid, 730942 problematic spliced reads
+11900000 valid, 737191 problematic spliced reads
+12000000 valid, 741687 problematic spliced reads
+12100000 valid, 747905 problematic spliced reads
+12200000 valid, 755420 problematic spliced reads
+12300000 valid, 760983 problematic spliced reads
+12400000 valid, 765470 problematic spliced reads
+12500000 valid, 772379 problematic spliced reads
+12600000 valid, 781110 problematic spliced reads
+12700000 valid, 786026 problematic spliced reads
+12800000 valid, 792445 problematic spliced reads
+12900000 valid, 798666 problematic spliced reads
+13000000 valid, 803285 problematic spliced reads
+13100000 valid, 809813 problematic spliced reads
+13200000 valid, 814689 problematic spliced reads
+13300000 valid, 821889 problematic spliced reads
+13400000 valid, 831351 problematic spliced reads
+13500000 valid, 838236 problematic spliced reads
+13600000 valid, 843606 problematic spliced reads
+13700000 valid, 852557 problematic spliced reads
+13800000 valid, 861062 problematic spliced reads
+13900000 valid, 866361 problematic spliced reads
+14000000 valid, 871809 problematic spliced reads
+14100000 valid, 880591 problematic spliced reads
+14200000 valid, 886695 problematic spliced reads
+14300000 valid, 892887 problematic spliced reads
+14400000 valid, 899557 problematic spliced reads
+14500000 valid, 905510 problematic spliced reads
+14600000 valid, 915414 problematic spliced reads
+14700000 valid, 920620 problematic spliced reads
+14800000 valid, 927457 problematic spliced reads
+14900000 valid, 933970 problematic spliced reads
+15000000 valid, 939119 problematic spliced reads
+15100000 valid, 944835 problematic spliced reads
+15200000 valid, 952434 problematic spliced reads
+15300000 valid, 958463 problematic spliced reads
+15400000 valid, 964511 problematic spliced reads
+15500000 valid, 969982 problematic spliced reads
+15600000 valid, 976015 problematic spliced reads
+15700000 valid, 982887 problematic spliced reads
+15800000 valid, 989701 problematic spliced reads
+15900000 valid, 996616 problematic spliced reads
+16000000 valid, 1003651 problematic spliced reads
+16100000 valid, 1014369 problematic spliced reads
+16200000 valid, 1023498 problematic spliced reads
+16300000 valid, 1028854 problematic spliced reads
+16400000 valid, 1032300 problematic spliced reads
+16500000 valid, 1037493 problematic spliced reads
+16600000 valid, 1041651 problematic spliced reads
+16700000 valid, 1047686 problematic spliced reads
+16800000 valid, 1054302 problematic spliced reads
+16900000 valid, 1059544 problematic spliced reads
+17000000 valid, 1070351 problematic spliced reads
+17100000 valid, 1078209 problematic spliced reads
+17200000 valid, 1085824 problematic spliced reads
+17300000 valid, 1091287 problematic spliced reads
+17400000 valid, 1098079 problematic spliced reads
+17500000 valid, 1103835 problematic spliced reads
+17600000 valid, 1109239 problematic spliced reads
+17700000 valid, 1115650 problematic spliced reads
+17800000 valid, 1120882 problematic spliced reads
+17900000 valid, 1126766 problematic spliced reads
+18000000 valid, 1131589 problematic spliced reads
+18100000 valid, 1136855 problematic spliced reads
+18200000 valid, 1142154 problematic spliced reads
+18300000 valid, 1148427 problematic spliced reads
+18400000 valid, 1155006 problematic spliced reads
+2020-11-30 17:14:16 Converting A006850100_136536 to A006850100_136536.junc
+100000 valid, 7470 problematic spliced reads
+200000 valid, 15291 problematic spliced reads
+300000 valid, 21592 problematic spliced reads
+400000 valid, 26195 problematic spliced reads
+500000 valid, 32811 problematic spliced reads
+600000 valid, 39340 problematic spliced reads
+700000 valid, 45212 problematic spliced reads
+800000 valid, 49393 problematic spliced reads
+900000 valid, 55441 problematic spliced reads
+1000000 valid, 62442 problematic spliced reads
+1100000 valid, 67321 problematic spliced reads
+1200000 valid, 73440 problematic spliced reads
+1300000 valid, 79238 problematic spliced reads
+1400000 valid, 84937 problematic spliced reads
+1500000 valid, 91958 problematic spliced reads
+1600000 valid, 100932 problematic spliced reads
+1700000 valid, 106806 problematic spliced reads
+1800000 valid, 113619 problematic spliced reads
+1900000 valid, 120498 problematic spliced reads
+2000000 valid, 127850 problematic spliced reads
+2100000 valid, 134499 problematic spliced reads
+2200000 valid, 141860 problematic spliced reads
+2300000 valid, 149806 problematic spliced reads
+2400000 valid, 155534 problematic spliced reads
+2500000 valid, 160719 problematic spliced reads
+2600000 valid, 167688 problematic spliced reads
+2700000 valid, 173724 problematic spliced reads
+2800000 valid, 180154 problematic spliced reads
+2900000 valid, 186785 problematic spliced reads
+3000000 valid, 193260 problematic spliced reads
+3100000 valid, 198284 problematic spliced reads
+3200000 valid, 202113 problematic spliced reads
+3300000 valid, 209623 problematic spliced reads
+3400000 valid, 217302 problematic spliced reads
+3500000 valid, 224696 problematic spliced reads
+3600000 valid, 230732 problematic spliced reads
+3700000 valid, 236131 problematic spliced reads
+3800000 valid, 243126 problematic spliced reads
+3900000 valid, 249970 problematic spliced reads
+4000000 valid, 257699 problematic spliced reads
+4100000 valid, 264655 problematic spliced reads
+4200000 valid, 269836 problematic spliced reads
+4300000 valid, 275687 problematic spliced reads
+4400000 valid, 282312 problematic spliced reads
+4500000 valid, 292805 problematic spliced reads
+4600000 valid, 299365 problematic spliced reads
+4700000 valid, 306075 problematic spliced reads
+4800000 valid, 312248 problematic spliced reads
+4900000 valid, 318708 problematic spliced reads
+5000000 valid, 327356 problematic spliced reads
+5100000 valid, 332506 problematic spliced reads
+5200000 valid, 340380 problematic spliced reads
+5300000 valid, 346971 problematic spliced reads
+5400000 valid, 353466 problematic spliced reads
+5500000 valid, 359879 problematic spliced reads
+5600000 valid, 365948 problematic spliced reads
+5700000 valid, 369612 problematic spliced reads
+5800000 valid, 377273 problematic spliced reads
+5900000 valid, 383619 problematic spliced reads
+6000000 valid, 388859 problematic spliced reads
+6100000 valid, 394108 problematic spliced reads
+6200000 valid, 400191 problematic spliced reads
+6300000 valid, 407339 problematic spliced reads
+6400000 valid, 414884 problematic spliced reads
+6500000 valid, 421828 problematic spliced reads
+6600000 valid, 428271 problematic spliced reads
+6700000 valid, 435121 problematic spliced reads
+6800000 valid, 441162 problematic spliced reads
+6900000 valid, 447397 problematic spliced reads
+7000000 valid, 453542 problematic spliced reads
+7100000 valid, 460507 problematic spliced reads
+7200000 valid, 466521 problematic spliced reads
+7300000 valid, 472296 problematic spliced reads
+7400000 valid, 478558 problematic spliced reads
+7500000 valid, 485637 problematic spliced reads
+7600000 valid, 492384 problematic spliced reads
+7700000 valid, 500076 problematic spliced reads
+7800000 valid, 506306 problematic spliced reads
+7900000 valid, 512931 problematic spliced reads
+8000000 valid, 520955 problematic spliced reads
+8100000 valid, 528044 problematic spliced reads
+8200000 valid, 535399 problematic spliced reads
+8300000 valid, 542429 problematic spliced reads
+8400000 valid, 546426 problematic spliced reads
+8500000 valid, 554165 problematic spliced reads
+8600000 valid, 560638 problematic spliced reads
+8700000 valid, 568183 problematic spliced reads
+8800000 valid, 575147 problematic spliced reads
+8900000 valid, 581224 problematic spliced reads
+9000000 valid, 587861 problematic spliced reads
+9100000 valid, 594364 problematic spliced reads
+9200000 valid, 600707 problematic spliced reads
+9300000 valid, 607595 problematic spliced reads
+9400000 valid, 613889 problematic spliced reads
+9500000 valid, 620668 problematic spliced reads
+9600000 valid, 626672 problematic spliced reads
+9700000 valid, 634850 problematic spliced reads
+9800000 valid, 640931 problematic spliced reads
+9900000 valid, 645243 problematic spliced reads
+10000000 valid, 651396 problematic spliced reads
+10100000 valid, 656297 problematic spliced reads
+10200000 valid, 660994 problematic spliced reads
+10300000 valid, 668532 problematic spliced reads
+10400000 valid, 675222 problematic spliced reads
+10500000 valid, 682148 problematic spliced reads
+10600000 valid, 687588 problematic spliced reads
+10700000 valid, 693935 problematic spliced reads
+10800000 valid, 702798 problematic spliced reads
+10900000 valid, 708587 problematic spliced reads
+11000000 valid, 716338 problematic spliced reads
+11100000 valid, 722145 problematic spliced reads
+11200000 valid, 727958 problematic spliced reads
+11300000 valid, 733340 problematic spliced reads
+11400000 valid, 739408 problematic spliced reads
+11500000 valid, 745710 problematic spliced reads
+11600000 valid, 751323 problematic spliced reads
+11700000 valid, 758352 problematic spliced reads
+11800000 valid, 764252 problematic spliced reads
+11900000 valid, 772923 problematic spliced reads
+12000000 valid, 782933 problematic spliced reads
+12100000 valid, 789686 problematic spliced reads
+12200000 valid, 795637 problematic spliced reads
+12300000 valid, 802151 problematic spliced reads
+12400000 valid, 808817 problematic spliced reads
+12500000 valid, 815956 problematic spliced reads
+12600000 valid, 821852 problematic spliced reads
+12700000 valid, 826941 problematic spliced reads
+12800000 valid, 833751 problematic spliced reads
+12900000 valid, 841798 problematic spliced reads
+13000000 valid, 847523 problematic spliced reads
+13100000 valid, 852759 problematic spliced reads
+13200000 valid, 858957 problematic spliced reads
+13300000 valid, 869078 problematic spliced reads
+13400000 valid, 875118 problematic spliced reads
+13500000 valid, 880603 problematic spliced reads
+13600000 valid, 886991 problematic spliced reads
+13700000 valid, 893074 problematic spliced reads
+13800000 valid, 899231 problematic spliced reads
+13900000 valid, 905867 problematic spliced reads
+14000000 valid, 911766 problematic spliced reads
+14100000 valid, 919314 problematic spliced reads
+14200000 valid, 929045 problematic spliced reads
+14300000 valid, 936428 problematic spliced reads
+14400000 valid, 942410 problematic spliced reads
+14500000 valid, 952470 problematic spliced reads
+14600000 valid, 960916 problematic spliced reads
+14700000 valid, 967524 problematic spliced reads
+14800000 valid, 972822 problematic spliced reads
+14900000 valid, 978786 problematic spliced reads
+15000000 valid, 988418 problematic spliced reads
+15100000 valid, 994749 problematic spliced reads
+15200000 valid, 1002287 problematic spliced reads
+15300000 valid, 1008503 problematic spliced reads
+15400000 valid, 1019666 problematic spliced reads
+15500000 valid, 1026408 problematic spliced reads
+15600000 valid, 1031870 problematic spliced reads
+15700000 valid, 1038495 problematic spliced reads
+15800000 valid, 1045506 problematic spliced reads
+15900000 valid, 1050953 problematic spliced reads
+16000000 valid, 1057067 problematic spliced reads
+16100000 valid, 1064637 problematic spliced reads
+16200000 valid, 1071638 problematic spliced reads
+16300000 valid, 1077718 problematic spliced reads
+16400000 valid, 1083406 problematic spliced reads
+16500000 valid, 1089127 problematic spliced reads
+16600000 valid, 1097332 problematic spliced reads
+16700000 valid, 1103994 problematic spliced reads
+16800000 valid, 1111803 problematic spliced reads
+16900000 valid, 1117332 problematic spliced reads
+17000000 valid, 1124060 problematic spliced reads
+17100000 valid, 1137847 problematic spliced reads
+17200000 valid, 1147390 problematic spliced reads
+17300000 valid, 1152820 problematic spliced reads
+17400000 valid, 1156524 problematic spliced reads
+17500000 valid, 1161905 problematic spliced reads
+17600000 valid, 1166269 problematic spliced reads
+17700000 valid, 1172718 problematic spliced reads
+17800000 valid, 1179422 problematic spliced reads
+17900000 valid, 1185054 problematic spliced reads
+18000000 valid, 1195848 problematic spliced reads
+18100000 valid, 1204108 problematic spliced reads
+18200000 valid, 1211764 problematic spliced reads
+18300000 valid, 1219628 problematic spliced reads
+18400000 valid, 1225613 problematic spliced reads
+18500000 valid, 1232662 problematic spliced reads
+18600000 valid, 1238483 problematic spliced reads
+18700000 valid, 1244565 problematic spliced reads
+18800000 valid, 1251178 problematic spliced reads
+18900000 valid, 1256432 problematic spliced reads
+19000000 valid, 1262966 problematic spliced reads
+19100000 valid, 1267812 problematic spliced reads
+19200000 valid, 1273471 problematic spliced reads
+19300000 valid, 1278928 problematic spliced reads
+19400000 valid, 1285536 problematic spliced reads
+19500000 valid, 1292410 problematic spliced reads
+2020-11-30 17:34:44 Leafcutter analysis Step2 control_vs_UPF3A_OE
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136526.junc...
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136528.junc...
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136530.junc...
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136532.junc...
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136534.junc...
+scanning /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136536.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..chr14:NA..GL000208.1:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..KI270729.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..KI270538.1:NA..chr16:NA..chr15:NA..chrM:NA..KI270720.1:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..GL000214.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..KI270738.1:NA..chr4:NA..chr17:NA..chr6:NA..chrX:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..KI270708.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..KI270711.1:NA..KI270750.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..KI270755.1:NA..chr8:NA..chr7:NA..chrY:NA..GL000218.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 115587 clusters..
+Split into 5932 clusters...
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136536.junc..
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136528.junc..
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136526.junc..
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136530.junc..
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136532.junc..
+Sorting /home/volker/2020_11_UPF3_2nd_DW/leafcutter/Juncfile/A006850100_136534.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 17:34:56 Leafcutter analysis Step3 control_vs_UPF3A_OE
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_2nd_DW/leafcutter/control_vs_UPF3A_OE/control_vs_UPF3A_OE_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_2nd_DW/leafcutter/control_vs_UPF3A_OE/Groups_control_vs_UPF3A_OE.txt 
+Encoding as control =0, UPF3A_OE =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_2nd_DW/leafcutter/control_vs_UPF3A_OE/control_vs_UPF3A_OE"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1               <=1 sample with coverage>min_coverage    5
+2 <2 introns used in >=min_samples_per_intron samples    3
+3                            Not enough valid samples  304
+4                                             Success 5620
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Error in biomaRt::getBM(attributes = as.character(c(filters, attributes)),  : 
+  Values argument contains no data.
+Calls: <Anonymous> -> <Anonymous>
+Execution halted
+2020-11-30 17:35:48 All leafcutter steps for control_vs_UPF3A_OE finished successfully
+2020-11-30 17:35:48 Run leafcutter combination script
+# of conditions:
+2
+Conditions:
+['control', 'UPF3A_OE']
+# rows before filtering:
+15170
+# rows after filtering
+20
+# rows of final df
+20
+Condition UPF3A_OE processed
+2020-11-30 17:35:50 All leafcutter steps finished successfully
+`summarise()` regrouping output by 'condition_2', 'geneID' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+New names:
+* `` -> ...1
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DTU)`
+  <chr>            <dbl>
+1 UPF3A_OE            57
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DTU)/length(DTU)`
+  <chr>                        <dbl>
+1 UPF3A_OE                   0.00264
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(AS)`
+  <chr>           <dbl>
+1 UPF3A_OE            0
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(AS)/length(AS)`
+  <chr>                      <dbl>
+1 UPF3A_OE                       0
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DGE)`
+  <chr>            <dbl>
+1 UPF3A_OE            12
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DGE)/length(DGE)`
+  <chr>                        <dbl>
+1 UPF3A_OE                  0.000557
+`summarise()` ungrouping output (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2', 'geneID' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+New names:
+* `` -> ...1
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DTU)`
+  <chr>            <dbl>
+1 UPF3A_OE            10
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DTU)/length(DTU)`
+  <chr>                        <dbl>
+1 UPF3A_OE                  0.000464
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(AS)`
+  <chr>           <dbl>
+1 UPF3A_OE            0
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(AS)/length(AS)`
+  <chr>                      <dbl>
+1 UPF3A_OE                       0
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DGE)`
+  <chr>            <dbl>
+1 UPF3A_OE             3
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 1 x 2
+  condition_2 `sum(DGE)/length(DGE)`
+  <chr>                        <dbl>
+1 UPF3A_OE                  0.000139
+`summarise()` ungrouping output (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+Error in hclust(d, method = method) : must have n >= 2 objects to cluster
+Calls: pheatmap -> cluster_mat -> hclust
+Execution halted
+
+###################
+## Perform MultiQC analysis
+###################
+
+2020-11-30 17:35:57 Make directory /home/volker/2020_11_UPF3_2nd_DW/QC/
+[2020-11-30 17:35:58,551] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/volker/miniconda3/lib/python3.7/site-packages/multiqc_config.yaml
+[2020-11-30 17:35:58,553] multiqc                                            [DEBUG  ]  Loading config settings from: /home/volker/.multiqc_config.yaml
+[2020-11-30 17:35:58,553] multiqc                                            [DEBUG  ]  New config 'title': General QC analysis
+[2020-11-30 17:35:58,553] multiqc                                            [DEBUG  ]  New config 'intro_text': MultiQC reports summarise FastQC, Salmon, featureCounts and STAR analysis results.
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'custom_logo': /home/volker/Tools/logo_big.png
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'custom_logo_url': http://www.uni-koeln.de/math-nat-fak/genetik/groups/Gehring/
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'custom_logo_title': Gehring Lab
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'report_header_info': [{'Contact E-mail': 'boehmv@uni-koeln.de'}]
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'run_modules': ['fastqc', 'salmon', 'star', 'featureCounts']
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  New config 'fn_ignore_dirs': ['_STARpass1']
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-11-30 17:35:58,554] multiqc                                            [DEBUG  ]  Command used: /home/volker/miniconda3/bin/multiqc /home/volker/2020_11_UPF3_2nd_DW/FASTQ /home/volker/2020_11_UPF3_2nd_DW/Salmon /srv/2020_11_UPF3_DW/UPF3 -v -f -o /home/volker/2020_11_UPF3_2nd_DW/QC/ --sample-names /home/volker/2020_11_UPF3_2nd_DW/Samples.txt
+[2020-11-30 17:35:58,755] multiqc                                            [WARNING]  MultiQC Version v1.9 now available!
+[2020-11-30 17:35:58,755] multiqc                                            [DEBUG  ]  Loading sample renaming config settings from: /home/volker/2020_11_UPF3_2nd_DW/Samples.txt
+[2020-11-30 17:35:58,755] multiqc                                            [DEBUG  ]  Found 2 sample renaming patterns
+[2020-11-30 17:35:58,755] multiqc                                            [INFO   ]  This is MultiQC v1.8
+[2020-11-30 17:35:58,755] multiqc                                            [DEBUG  ]  Command     : /home/volker/miniconda3/bin/multiqc /home/volker/2020_11_UPF3_2nd_DW/FASTQ /home/volker/2020_11_UPF3_2nd_DW/Salmon /srv/2020_11_UPF3_DW/UPF3 -v -f -o /home/volker/2020_11_UPF3_2nd_DW/QC/ --sample-names /home/volker/2020_11_UPF3_2nd_DW/Samples.txt
+[2020-11-30 17:35:58,755] multiqc                                            [DEBUG  ]  Working dir : /home/volker/2020_11_UPF3_2nd_DW/leafcutter/control_vs_UPF3A_OE
+[2020-11-30 17:35:58,755] multiqc                                            [INFO   ]  Template    : default
+[2020-11-30 17:35:58,755] multiqc                                            [DEBUG  ]  Running Python 3.7.6 | packaged by conda-forge | (default, Jun  1 2020, 18:57:50)  [GCC 7.5.0]
+[2020-11-30 17:35:58,755] multiqc                                            [INFO   ]  Report title: General QC analysis
+[2020-11-30 17:35:58,755] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_11_UPF3_2nd_DW/FASTQ
+[2020-11-30 17:35:58,755] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_11_UPF3_2nd_DW/Salmon
+[2020-11-30 17:35:58,756] multiqc                                            [INFO   ]  Searching   : /srv/2020_11_UPF3_DW/UPF3
+[2020-11-30 17:35:58,756] multiqc                                            [INFO   ]  Only using modules fastqc, salmon, star, featureCounts
+[2020-11-30 17:35:58,756] multiqc                                            [DEBUG  ]  Analysing modules: featureCounts, salmon, star, fastqc
+[2020-11-30 17:35:58,756] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp9hg525ht
+[2020-11-30 17:35:58,843] multiqc                                            [DEBUG  ]  Ignored 198 search patterns as didn't match running modules.
+[2020-11-30 17:35:58,845] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136512/_STARpass1
+[2020-11-30 17:35:58,846] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136526/_STARpass1
+[2020-11-30 17:35:58,846] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136496/_STARpass1
+[2020-11-30 17:35:58,846] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136530/_STARpass1
+[2020-11-30 17:35:58,846] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136528/_STARpass1
+[2020-11-30 17:35:58,846] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136516/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136504/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136520/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136532/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136524/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136518/_STARpass1
+[2020-11-30 17:35:58,847] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136498/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136534/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136522/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136508/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136506/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136502/_STARpass1
+[2020-11-30 17:35:58,848] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136510/_STARpass1
+[2020-11-30 17:35:58,849] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136500/_STARpass1
+[2020-11-30 17:35:58,849] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136514/_STARpass1
+[2020-11-30 17:35:58,849] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136536/_STARpass1
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_1.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_2.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_2.fq.gz
+[2020-11-30 17:35:58,855] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_2.fq.gz
+[2020-11-30 17:35:58,856] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_2.fq.gz
+[2020-11-30 17:35:58,856] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_2.fq.gz
+[2020-11-30 17:35:58,856] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_2.fq.gz
+[2020-11-30 17:35:59,210] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,274] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,274] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,275] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,347] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,347] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,348] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,402] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,402] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,403] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,466] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,466] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,467] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,530] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,530] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,531] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,594] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,595] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,595] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,656] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,718] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,780] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,780] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,781] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,844] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,844] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,845] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,900] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,901] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,901] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:35:59,960] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:35:59,960] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:35:59,961] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,028] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,028] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,029] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,095] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,095] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,096] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,156] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,156] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,157] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,217] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,217] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,218] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,281] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,282] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,282] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,336] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,336] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,337] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,395] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,395] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,396] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,457] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,458] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,459] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 17:36:00,526] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 17:36:00,526] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 17:36:00,767] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-11-30 17:36:00,780] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2020-11-30 17:36:00,784] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-11-30 17:36:00,788] multiqc.modules.salmon.salmon                      [INFO   ]  Found 6 meta reports
+[2020-11-30 17:36:00,788] multiqc.modules.salmon.salmon                      [INFO   ]  Found 6 fragment length distributions
+[2020-11-30 17:36:00,895] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136512
+[2020-11-30 17:36:00,962] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136526
+[2020-11-30 17:36:01,029] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136496
+[2020-11-30 17:36:01,095] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136530
+[2020-11-30 17:36:01,162] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136528
+[2020-11-30 17:36:01,229] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136516
+[2020-11-30 17:36:01,295] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136504
+[2020-11-30 17:36:01,365] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136520
+[2020-11-30 17:36:01,431] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136532
+[2020-11-30 17:36:01,498] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136524
+[2020-11-30 17:36:01,564] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136518
+[2020-11-30 17:36:01,631] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136498
+[2020-11-30 17:36:01,698] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136534
+[2020-11-30 17:36:01,765] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136522
+[2020-11-30 17:36:01,832] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136508
+[2020-11-30 17:36:01,898] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136506
+[2020-11-30 17:36:01,965] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136502
+[2020-11-30 17:36:02,032] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136510
+[2020-11-30 17:36:02,099] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136500
+[2020-11-30 17:36:02,166] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136514
+[2020-11-30 17:36:02,233] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136536
+[2020-11-30 17:36:02,233] multiqc.modules.star.star                          [INFO   ]  Found 21 reports and 21 gene count files
+[2020-11-30 17:36:02,245] multiqc                                            [DEBUG  ]  No samples found: fastqc
+[2020-11-30 17:36:02,259] multiqc                                            [INFO   ]  Compressing plot data
+[2020-11-30 17:36:02,351] multiqc                                            [INFO   ]  Report      : ../../QC/multiqc_report.html
+[2020-11-30 17:36:02,351] multiqc                                            [INFO   ]  Data        : ../../QC/multiqc_data
+[2020-11-30 17:36:02,351] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp9hg525ht/multiqc_data/multiqc_data.json' to '/home/volker/2020_11_UPF3_2nd_DW/QC/multiqc_data'
+[2020-11-30 17:36:02,352] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp9hg525ht/multiqc_data/multiqc_general_stats.txt' to '/home/volker/2020_11_UPF3_2nd_DW/QC/multiqc_data'
+[2020-11-30 17:36:02,352] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp9hg525ht/multiqc_data/multiqc_star.txt' to '/home/volker/2020_11_UPF3_2nd_DW/QC/multiqc_data'
+[2020-11-30 17:36:02,353] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp9hg525ht/multiqc_data/multiqc_salmon.txt' to '/home/volker/2020_11_UPF3_2nd_DW/QC/multiqc_data'
+[2020-11-30 17:36:02,353] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp9hg525ht/multiqc_data/multiqc_sources.txt' to '/home/volker/2020_11_UPF3_2nd_DW/QC/multiqc_data'
+[2020-11-30 17:36:02,439] multiqc                                            [INFO   ]  MultiQC complete

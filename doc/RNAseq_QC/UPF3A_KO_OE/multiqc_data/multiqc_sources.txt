@@ -1,0 +1,9 @@
+Module	Section	Sample Name	Source
+Salmon	all_sections	A006850100_136526	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136526/libParams/flenDist.txt
+Salmon	all_sections	A006850100_136528	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136528/libParams/flenDist.txt
+Salmon	all_sections	A006850100_136532	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136532/libParams/flenDist.txt
+Salmon	all_sections	A006850100_136530	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136530/libParams/flenDist.txt
+Salmon	all_sections	A006850100_136534	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136534/libParams/flenDist.txt
+Salmon	all_sections	A006850100_136536	/home/volker/2020_11_UPF3_2nd_DW/Salmon/A006850100_136536/libParams/flenDist.txt
+STAR	SummaryLog	Log.final.out	/srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136536/Log.final.out
+STAR	ReadsPerGene	ReadsPerGene.out.tab	/srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136536/ReadsPerGene.out.tab

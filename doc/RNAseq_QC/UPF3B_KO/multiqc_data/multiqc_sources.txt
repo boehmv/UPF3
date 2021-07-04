@@ -1,0 +1,12 @@
+Module	Section	Sample Name	Source
+Salmon	all_sections	K002000269_94852	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94852/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94854	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94854/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94806	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94806/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94804	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94804/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94844	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94844/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94850	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94850/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94848	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94848/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94802	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94802/libParams/flenDist.txt
+Salmon	all_sections	K002000269_94846	/home/volker/2018_10_NMD_VB/Salmon/K002000269_94846/libParams/flenDist.txt
+STAR	SummaryLog	Log.final.out	/srv2/2018_10_NMD_VB/NMD_3B/BAM/K002000269_94846/Log.final.out
+STAR	ReadsPerGene	ReadsPerGene.out.tab	/srv2/2018_10_NMD_VB/NMD_3B/BAM/K002000269_94846/ReadsPerGene.out.tab

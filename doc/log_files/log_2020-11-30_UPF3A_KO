@@ -1,0 +1,2392 @@
+
+####################################################
+## Complete RNA-Seq Analysis [CRSA] Version 0.0.6 ##
+####################################################
+
+######################
+## General settings ##
+######################
+
+Reference used: gencode.v33.SIRVomeERCCome
+Sequencing design (paired/single): paired
+Name of the study: UPF3
+Location of files on server: /srv/2020_11_UPF3_DW
+Location of project folder: /home/volker/2020_11_UPF3_DW
+Experiment file used for this analysis: /home/volker/2020_11_UPF3_DW/experiment.txt
+
+############################
+## Conditions and samples ##
+############################
+
+cond0 	 control 	 A006850100_136496 A006850100_136498 A006850100_136500
+cond1 	 UPF3A_2_14_Luc 	 A006850100_136502 A006850100_136504 A006850100_136506
+cond2 	 UPF3A_2_14_3B 	 A006850100_136508 A006850100_136510 A006850100_136512
+cond3 	 UPF3A_2_20_Luc 	 A006850100_136514 A006850100_136516 A006850100_136518
+cond4 	 UPF3A_2_20_3B 	 A006850100_136520 A006850100_136522 A006850100_136524
+cond5 	 WT 	 A006850100_136526 A006850100_136528 A006850100_136530
+cond6 	 UPF3A_OE 	 A006850100_136532 A006850100_136534 A006850100_136536
+
+######################
+## Analysis options ##
+######################
+
+STAR_enable (-M) = true
+Salmon_enable (-C) = true
+DESeq2_enable (-D) = true
+ISAR_enable (-I) = true
+leafcutter_enable (-L) = true
+IRFinder_enable (-i) = 
+QC_enable (-Q) = true
+
+
+###################
+## Perform STAR mapping, indexing and track generation
+###################
+
+STAR directory: /home/volker/reference
+STAR version: 2.7.3a
+Alfred version: v0.2.1
+Using system JDK.
+WARNING: package com.sun.java.swing.plaf.windows not in java.desktop
+WARNING: package sun.awt.windows not in java.desktop
+java version "11.0.2" 2019-01-15 LTS
+Java(TM) SE Runtime Environment 18.9 (build 11.0.2+9-LTS)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11.0.2+9-LTS, mixed mode)
+WARN [2020-11-30T09:14:14,818]  [Globals.java:139] [main]  Development mode is enabled
+IGV Version 2.8.0 01/06/2020 08:43 PM
+Done
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136496
+
+2020-11-30 09:14:14 A006850100_136496 BAM file already generated
+2020-11-30 09:14:14 A006850100_136496 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136496 BAM file link already created
+2020-11-30 09:14:14 A006850100_136496 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136496 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136498
+
+2020-11-30 09:14:14 A006850100_136498 BAM file already generated
+2020-11-30 09:14:14 A006850100_136498 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136498 BAM file link already created
+2020-11-30 09:14:14 A006850100_136498 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136498 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136500
+
+2020-11-30 09:14:14 A006850100_136500 BAM file already generated
+2020-11-30 09:14:14 A006850100_136500 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136500 BAM file link already created
+2020-11-30 09:14:14 A006850100_136500 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136500 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136502
+
+2020-11-30 09:14:14 A006850100_136502 BAM file already generated
+2020-11-30 09:14:14 A006850100_136502 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136502 BAM file link already created
+2020-11-30 09:14:14 A006850100_136502 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136502 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136504
+
+2020-11-30 09:14:14 A006850100_136504 BAM file already generated
+2020-11-30 09:14:14 A006850100_136504 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136504 BAM file link already created
+2020-11-30 09:14:14 A006850100_136504 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136504 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136506
+
+2020-11-30 09:14:14 A006850100_136506 BAM file already generated
+2020-11-30 09:14:14 A006850100_136506 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136506 BAM file link already created
+2020-11-30 09:14:14 A006850100_136506 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136506 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136508
+
+2020-11-30 09:14:14 A006850100_136508 BAM file already generated
+2020-11-30 09:14:14 A006850100_136508 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136508 BAM file link already created
+2020-11-30 09:14:14 A006850100_136508 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136508 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136510
+
+2020-11-30 09:14:14 A006850100_136510 BAM file already generated
+2020-11-30 09:14:14 A006850100_136510 BAM file already indexed
+2020-11-30 09:14:14 A006850100_136510 BAM file link already created
+2020-11-30 09:14:14 A006850100_136510 BAM file index link already created
+2020-11-30 09:14:14 A006850100_136510 BAM file already converted to track
+
+2020-11-30 09:14:14 Start STAR mapping of sample A006850100_136512
+
+2020-11-30 09:14:14 A006850100_136512 BAM file already generated
+2020-11-30 09:14:15 A006850100_136512 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136512 BAM file link already created
+2020-11-30 09:14:15 A006850100_136512 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136512 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136514
+
+2020-11-30 09:14:15 A006850100_136514 BAM file already generated
+2020-11-30 09:14:15 A006850100_136514 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136514 BAM file link already created
+2020-11-30 09:14:15 A006850100_136514 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136514 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136516
+
+2020-11-30 09:14:15 A006850100_136516 BAM file already generated
+2020-11-30 09:14:15 A006850100_136516 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136516 BAM file link already created
+2020-11-30 09:14:15 A006850100_136516 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136516 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136518
+
+2020-11-30 09:14:15 A006850100_136518 BAM file already generated
+2020-11-30 09:14:15 A006850100_136518 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136518 BAM file link already created
+2020-11-30 09:14:15 A006850100_136518 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136518 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136520
+
+2020-11-30 09:14:15 A006850100_136520 BAM file already generated
+2020-11-30 09:14:15 A006850100_136520 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136520 BAM file link already created
+2020-11-30 09:14:15 A006850100_136520 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136520 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136522
+
+2020-11-30 09:14:15 A006850100_136522 BAM file already generated
+2020-11-30 09:14:15 A006850100_136522 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136522 BAM file link already created
+2020-11-30 09:14:15 A006850100_136522 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136522 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136524
+
+2020-11-30 09:14:15 A006850100_136524 BAM file already generated
+2020-11-30 09:14:15 A006850100_136524 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136524 BAM file link already created
+2020-11-30 09:14:15 A006850100_136524 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136524 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136526
+
+2020-11-30 09:14:15 A006850100_136526 BAM file already generated
+2020-11-30 09:14:15 A006850100_136526 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136526 BAM file link already created
+2020-11-30 09:14:15 A006850100_136526 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136526 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136528
+
+2020-11-30 09:14:15 A006850100_136528 BAM file already generated
+2020-11-30 09:14:15 A006850100_136528 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136528 BAM file link already created
+2020-11-30 09:14:15 A006850100_136528 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136528 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136530
+
+2020-11-30 09:14:15 A006850100_136530 BAM file already generated
+2020-11-30 09:14:15 A006850100_136530 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136530 BAM file link already created
+2020-11-30 09:14:15 A006850100_136530 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136530 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136532
+
+2020-11-30 09:14:15 A006850100_136532 BAM file already generated
+2020-11-30 09:14:15 A006850100_136532 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136532 BAM file link already created
+2020-11-30 09:14:15 A006850100_136532 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136532 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136534
+
+2020-11-30 09:14:15 A006850100_136534 BAM file already generated
+2020-11-30 09:14:15 A006850100_136534 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136534 BAM file link already created
+2020-11-30 09:14:15 A006850100_136534 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136534 BAM file already converted to track
+
+2020-11-30 09:14:15 Start STAR mapping of sample A006850100_136536
+
+2020-11-30 09:14:15 A006850100_136536 BAM file already generated
+2020-11-30 09:14:15 A006850100_136536 BAM file already indexed
+2020-11-30 09:14:15 A006850100_136536 BAM file link already created
+2020-11-30 09:14:15 A006850100_136536 BAM file index link already created
+2020-11-30 09:14:15 A006850100_136536 BAM file already converted to track
+
+###################
+## Perform salmon analysis
+###################
+
+Salmon version: salmon 1.3.0
+
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136496
+2020-11-30 09:14:15 Sample A006850100_136496 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136498
+2020-11-30 09:14:15 Sample A006850100_136498 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136500
+2020-11-30 09:14:15 Sample A006850100_136500 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136502
+2020-11-30 09:14:15 Sample A006850100_136502 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136504
+2020-11-30 09:14:15 Sample A006850100_136504 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136506
+2020-11-30 09:14:15 Sample A006850100_136506 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136508
+2020-11-30 09:14:15 Sample A006850100_136508 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136510
+2020-11-30 09:14:15 Sample A006850100_136510 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136512
+2020-11-30 09:14:15 Sample A006850100_136512 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136514
+2020-11-30 09:14:15 Sample A006850100_136514 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136516
+2020-11-30 09:14:15 Sample A006850100_136516 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136518
+2020-11-30 09:14:15 Sample A006850100_136518 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136520
+2020-11-30 09:14:15 Sample A006850100_136520 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136522
+2020-11-30 09:14:15 Sample A006850100_136522 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136524
+2020-11-30 09:14:15 Sample A006850100_136524 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136526
+2020-11-30 09:14:15 Sample A006850100_136526 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136528
+2020-11-30 09:14:15 Sample A006850100_136528 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136530
+2020-11-30 09:14:15 Sample A006850100_136530 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136532
+2020-11-30 09:14:15 Sample A006850100_136532 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136534
+2020-11-30 09:14:15 Sample A006850100_136534 already analyzed
+2020-11-30 09:14:15 Start Salmon analysis A006850100_136536
+2020-11-30 09:14:15 Sample A006850100_136536 already analyzed
+
+###################
+## Perform DESeq2 analysis
+###################
+
+DESeq2 directory: /home/volker/Tools/DESeq2
+
+[1] TRUE
+Parsed with column specification:
+cols(
+  TXNAME = col_character(),
+  GENEID = col_character()
+)
+reading in files with read_tsv
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
+summarizing abundance
+summarizing counts
+summarizing length
+using counts and average transcript lengths from tximport
+Warning message:
+In DESeqDataSet(se, design = design, ignoreRank) :
+  some variables in design formula are characters, converting to factors
+estimating size factors
+using 'avgTxLength' from assays(dds), correcting for library size
+estimating dispersions
+gene-wise dispersion estimates
+mean-dispersion relationship
+final dispersion estimates
+fitting model and testing
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_2_14_Luc
+Generate Glimma MD plots for UPF3A_2_14_Luc
+GO analysis for UPF3A_2_14_Luc running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to UPF3A_2_14_Luc_vs_control_gprofiler.pdf
+WARNING - GO analysis for UPF3A_2_14_Luc caught an warning!
+GO analysis for UPF3A_2_14_Luc finished
+Saved DESeq2 analysis RData for UPF3A_2_14_Luc in /home/volker/2020_11_UPF3_DW/DESeq2/UPF3A_2_14_Luc
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_2_14_3B
+Generate Glimma MD plots for UPF3A_2_14_3B
+GO analysis for UPF3A_2_14_3B running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to UPF3A_2_14_3B_vs_control_gprofiler.pdf
+ERROR - GO analysis for UPF3A_2_14_3B NOT successful!
+GO analysis for UPF3A_2_14_3B finished
+Saved DESeq2 analysis RData for UPF3A_2_14_3B in /home/volker/2020_11_UPF3_DW/DESeq2/UPF3A_2_14_3B
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_2_20_Luc
+Generate Glimma MD plots for UPF3A_2_20_Luc
+GO analysis for UPF3A_2_20_Luc running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to UPF3A_2_20_Luc_vs_control_gprofiler.pdf
+ERROR - GO analysis for UPF3A_2_20_Luc NOT successful!
+GO analysis for UPF3A_2_20_Luc finished
+Saved DESeq2 analysis RData for UPF3A_2_20_Luc in /home/volker/2020_11_UPF3_DW/DESeq2/UPF3A_2_20_Luc
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_2_20_3B
+Generate Glimma MD plots for UPF3A_2_20_3B
+GO analysis for UPF3A_2_20_3B running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to UPF3A_2_20_3B_vs_control_gprofiler.pdf
+ERROR - GO analysis for UPF3A_2_20_3B NOT successful!
+GO analysis for UPF3A_2_20_3B finished
+Saved DESeq2 analysis RData for UPF3A_2_20_3B in /home/volker/2020_11_UPF3_DW/DESeq2/UPF3A_2_20_3B
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for WT
+Generate Glimma MD plots for WT
+GO analysis for WT running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to WT_vs_control_gprofiler.pdf
+ERROR - GO analysis for WT NOT successful!
+GO analysis for WT finished
+Saved DESeq2 analysis RData for WT in /home/volker/2020_11_UPF3_DW/DESeq2/WT
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+'select()' returned 1:many mapping between keys and columns
+Generate csv output file for UPF3A_OE
+Generate Glimma MD plots for UPF3A_OE
+GO analysis for UPF3A_OE running
+Detected custom background input, domain scope is set to 'custom'
+The image is saved to UPF3A_OE_vs_control_gprofiler.pdf
+ERROR - GO analysis for UPF3A_OE NOT successful!
+GO analysis for UPF3A_OE finished
+Saved DESeq2 analysis RData for UPF3A_OE in /home/volker/2020_11_UPF3_DW/DESeq2/UPF3A_OE
+# of conditions:
+7
+Conditions:
+['control', 'UPF3A_2_14_Luc', 'UPF3A_2_14_3B', 'UPF3A_2_20_Luc', 'UPF3A_2_20_3B', 'WT', 'UPF3A_OE']
+UPF3A_2_14_Luc
+# rows before filtering:
+25309
+# rows after filtering
+6416
+# rows of final df
+6416
+Condition UPF3A_2_14_Luc processed
+UPF3A_2_14_3B
+# rows before filtering:
+25309
+# rows after filtering
+8074
+# rows of final df
+9311
+Condition UPF3A_2_14_3B processed
+UPF3A_2_20_Luc
+# rows before filtering:
+25309
+# rows after filtering
+5363
+# rows of final df
+10850
+Condition UPF3A_2_20_Luc processed
+UPF3A_2_20_3B
+# rows before filtering:
+25309
+# rows after filtering
+6707
+# rows of final df
+11736
+Condition UPF3A_2_20_3B processed
+WT
+# rows before filtering:
+25309
+# rows after filtering
+3924
+# rows of final df
+12367
+Condition WT processed
+UPF3A_OE
+# rows before filtering:
+25309
+# rows after filtering
+4072
+# rows of final df
+12602
+Condition UPF3A_OE processed
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Registering fonts with R
+Warning messages:
+1: Removed 7347 rows containing missing values (geom_point). 
+2: Removed 5397 rows containing missing values (geom_point). 
+3: Removed 7837 rows containing missing values (geom_point). 
+4: Removed 5397 rows containing missing values (geom_point). 
+5: Removed 9792 rows containing missing values (geom_point). 
+6: Removed 8814 rows containing missing values (geom_point). 
+null device 
+          1 
+There were 30 warnings (use warnings() to see them)
+
+###################
+## Perform ISAR analysis
+###################
+
+IsoformSwitchAnalyzeR directory: /home/volker/Tools/ISAR
+Loading required package: limma
+Loading required package: DEXSeq
+Loading required package: BiocParallel
+Loading required package: Biobase
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following object is masked from ‘package:limma’:
+
+    plotMA
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: SummarizedExperiment
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+
+Attaching package: ‘DelayedArray’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from ‘package:base’:
+
+    aperm, apply, rowsum
+
+Loading required package: DESeq2
+Loading required package: AnnotationDbi
+Loading required package: RColorBrewer
+Loading required package: ggplot2
+Step 1 of 3: Identifying which algorithm was used...
+    The quantification algorithm used was: Salmon
+Step 2 of 3: Reading data...
+reading in files with read_tsv
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 
+Step 3 of 3: Normalizing FPKM/TxPM values via edgeR...
+Done
+
+Step 1 of 6: Checking data...
+Step 2 of 6: Obtaining annotation...
+    importing GTF (this may take a while)
+Step 3 of 6: Calculating gene expression and isoform fraction...
+     69184 ( 30.59%) isoforms were removed since they were not expressed in any samples.
+Step 4 of 6: Merging gene and isoform expression...
+  |                                                                              |                                                                      |   0%  |                                                                              |==========                                                            |  14%  |                                                                              |====================                                                  |  29%  |                                                                              |==============================                                        |  43%  |                                                                              |========================================                              |  57%  |                                                                              |==================================================                    |  71%  |                                                                              |============================================================          |  86%  |                                                                              |======================================================================| 100%
+Step 5 of 6: Making comparisons...
+  |                                                                              |                                                                      |   0%  |                                                                              |============                                                          |  17%  |                                                                              |=======================                                               |  33%  |                                                                              |===================================                                   |  50%  |                                                                              |===============================================                       |  67%  |                                                                              |==========================================================            |  83%  |                                                                              |======================================================================| 100%
+Step 6 of 6: Making switchAnalyzeRlist object...
+Done
+Warning message:
+In importRdata(isoformCountMatrix = salmonQuant$counts, isoformRepExpression = salmonQuant$abundance,  :
+  The annotation and quantification (count/abundance matrix and isoform annotation) Seem to be slightly different. 
+Specifically:
+ 839 isoforms were only found in the annotation
+ 
+Please make sure this is on purpouse since differences will cause inaccurate quantification and thereby skew all analysis.
+ If you have quantified with Salmon this could be normal since it as default only keep one copy of identical sequnces (can be prevented using the --keepDuplicates option)
+ We strongly encurage you to go back and figure out why this is the case.
+
+
+This switchAnalyzeRlist list contains:
+ 156962 isoforms from 35642 genes
+ 6 comparison from 7 conditions (in total 21 samples)
+
+Feature analyzed:
+[1] "ORFs"
+The filtering removed 94539 ( 60.23% of ) transcripts. There is now 62423 isoforms left
+Step 1 of 2: Testing each pairwise comparisons with DEXSeq (this might be a bit slow)...
+    Estimated time (for dataset with ~30.000 isoforms): 8.2 min
+  |                                                                              |                                                                      |   0%  |                                                                              |============                                                          |  17%  |                                                                              |=======================                                               |  33%  |                                                                              |===================================                                   |  50%  |                                                                              |===============================================                       |  67%  |                                                                              |==========================================================            |  83%  |                                                                              |======================================================================| 100%
+Step 2 of 2: Integrating result into switchAnalyzeRlist...
+    Isoform switch analysis was performed for 61098 gene comparisons (100%).
+Total runtime: 20.52 min
+Done
+Warning messages:
+1: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+2: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+3: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+4: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+5: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+6: In DESeqDataSet(rse, design, ignoreRank = TRUE) :
+  some variables in design formula are characters, converting to factors
+                 Comparison nrIsoforms nrSwitches nrGenes
+1  control vs UPF3A_2_14_3B        898        799     654
+2 control vs UPF3A_2_14_Luc        809        689     583
+3  control vs UPF3A_2_20_3B        719        627     532
+4 control vs UPF3A_2_20_Luc        218        233     189
+5       control vs UPF3A_OE        578        501     433
+6             control vs WT        563        496     421
+Step 1 of 4: Extracting genes with isoform switches...
+Step 2 of 4: Analyzing 2279 pairwise isoforms comparisons...
+  |                                                                              |                                                                      |   0%  |                                                                              |                                                                      |   1%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |==                                                                    |   4%  |                                                                              |===                                                                   |   4%  |                                                                              |===                                                                   |   5%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |=====                                                                 |   8%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |=======                                                               |  11%  |                                                                              |========                                                              |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |=========                                                             |  14%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  16%  |                                                                              |============                                                          |  17%  |                                                                              |============                                                          |  18%  |                                                                              |=============                                                         |  18%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  19%  |                                                                              |==============                                                        |  20%  |                                                                              |==============                                                        |  21%  |                                                                              |===============                                                       |  21%  |                                                                              |===============                                                       |  22%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |================                                                      |  24%  |                                                                              |=================                                                     |  24%  |                                                                              |=================                                                     |  25%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |===================                                                   |  26%  |                                                                              |===================                                                   |  27%  |                                                                              |===================                                                   |  28%  |                                                                              |====================                                                  |  28%  |                                                                              |====================                                                  |  29%  |                                                                              |=====================                                                 |  29%  |                                                                              |=====================                                                 |  30%  |                                                                              |=====================                                                 |  31%  |                                                                              |======================                                                |  31%  |                                                                              |======================                                                |  32%  |                                                                              |=======================                                               |  32%  |                                                                              |=======================                                               |  33%  |                                                                              |=======================                                               |  34%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  35%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |==========================                                            |  38%  |                                                                              |===========================                                           |  38%  |                                                                              |===========================                                           |  39%  |                                                                              |============================                                          |  39%  |                                                                              |============================                                          |  40%  |                                                                              |============================                                          |  41%  |                                                                              |=============================                                         |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |==============================                                        |  44%  |                                                                              |===============================                                       |  44%  |                                                                              |===============================                                       |  45%  |                                                                              |================================                                      |  45%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  46%  |                                                                              |=================================                                     |  47%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  48%  |                                                                              |==================================                                    |  49%  |                                                                              |===================================                                   |  49%  |                                                                              |===================================                                   |  50%  |                                                                              |===================================                                   |  51%  |                                                                              |====================================                                  |  51%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  52%  |                                                                              |=====================================                                 |  53%  |                                                                              |=====================================                                 |  54%  |                                                                              |======================================                                |  54%  |                                                                              |======================================                                |  55%  |                                                                              |=======================================                               |  55%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  56%  |                                                                              |========================================                              |  57%  |                                                                              |========================================                              |  58%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  59%  |                                                                              |==========================================                            |  60%  |                                                                              |==========================================                            |  61%  |                                                                              |===========================================                           |  61%  |                                                                              |===========================================                           |  62%  |                                                                              |============================================                          |  62%  |                                                                              |============================================                          |  63%  |                                                                              |============================================                          |  64%  |                                                                              |=============================================                         |  64%  |                                                                              |=============================================                         |  65%  |                                                                              |==============================================                        |  65%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |===============================================                       |  68%  |                                                                              |================================================                      |  68%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |=================================================                     |  71%  |                                                                              |==================================================                    |  71%  |                                                                              |==================================================                    |  72%  |                                                                              |===================================================                   |  72%  |                                                                              |===================================================                   |  73%  |                                                                              |===================================================                   |  74%  |                                                                              |====================================================                  |  74%  |                                                                              |====================================================                  |  75%  |                                                                              |=====================================================                 |  75%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  76%  |                                                                              |======================================================                |  77%  |                                                                              |======================================================                |  78%  |                                                                              |=======================================================               |  78%  |                                                                              |=======================================================               |  79%  |                                                                              |========================================================              |  79%  |                                                                              |========================================================              |  80%  |                                                                              |========================================================              |  81%  |                                                                              |=========================================================             |  81%  |                                                                              |=========================================================             |  82%  |                                                                              |==========================================================            |  82%  |                                                                              |==========================================================            |  83%  |                                                                              |==========================================================            |  84%  |                                                                              |===========================================================           |  84%  |                                                                              |===========================================================           |  85%  |                                                                              |============================================================          |  85%  |                                                                              |============================================================          |  86%  |                                                                              |=============================================================         |  86%  |                                                                              |=============================================================         |  87%  |                                                                              |=============================================================         |  88%  |                                                                              |==============================================================        |  88%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |===============================================================       |  91%  |                                                                              |================================================================      |  91%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |=================================================================     |  94%  |                                                                              |==================================================================    |  94%  |                                                                              |==================================================================    |  95%  |                                                                              |===================================================================   |  95%  |                                                                              |===================================================================   |  96%  |                                                                              |====================================================================  |  96%  |                                                                              |====================================================================  |  97%  |                                                                              |====================================================================  |  98%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================|  99%  |                                                                              |======================================================================| 100%
+Step 3 of 4: Massaging isoforms comparisons results...
+Step 4 of 4: Preparing output...
+Identified  genes with containing isoforms switching with functional consequences...
+                 Comparison nrIsoforms nrSwitches nrGenes
+1  control vs UPF3A_2_14_3B        898        799     654
+2 control vs UPF3A_2_14_Luc        809        689     583
+3  control vs UPF3A_2_20_3B        719        627     532
+4 control vs UPF3A_2_20_Luc        218        233     189
+5       control vs UPF3A_OE        578        501     433
+6             control vs WT        563        496     421
+                 Comparison nrIsoforms nrSwitches nrGenes
+1  control vs UPF3A_2_14_3B        102         87      71
+2 control vs UPF3A_2_14_Luc         74         71      54
+3  control vs UPF3A_2_20_3B        104         95      75
+4 control vs UPF3A_2_20_Luc         21         22      19
+5       control vs UPF3A_OE         51         45      39
+6             control vs WT         52         49      40
+Extracting data...
+Creating 120 plots...
+  |                                                                              |                                                                      |   0%  |                                                                              |=                                                                     |   1%  |                                                                              |=                                                                     |   2%  |                                                                              |==                                                                    |   2%  |                                                                              |==                                                                    |   3%  |                                                                              |===                                                                   |   4%  |                                                                              |====                                                                  |   5%  |                                                                              |====                                                                  |   6%  |                                                                              |=====                                                                 |   7%  |                                                                              |=====                                                                 |   8%  |                                                                              |======                                                                |   8%  |                                                                              |======                                                                |   9%  |                                                                              |=======                                                               |  10%  |                                                                              |========                                                              |  11%  |                                                                              |========                                                              |  12%  |                                                                              |=========                                                             |  12%  |                                                                              |=========                                                             |  13%  |                                                                              |==========                                                            |  14%  |                                                                              |==========                                                            |  15%  |                                                                              |===========                                                           |  16%  |                                                                              |============                                                          |  17%  |                                                                              |============                                                          |  18%  |                                                                              |=============                                                         |  18%  |                                                                              |=============                                                         |  19%  |                                                                              |==============                                                        |  20%  |                                                                              |===============                                                       |  21%  |                                                                              |===============                                                       |  22%  |                                                                              |================                                                      |  22%  |                                                                              |================                                                      |  23%  |                                                                              |=================                                                     |  24%  |                                                                              |==================                                                    |  25%  |                                                                              |==================                                                    |  26%  |                                                                              |===================                                                   |  27%  |                                                                              |===================                                                   |  28%  |                                                                              |====================                                                  |  28%  |                                                                              |====================                                                  |  29%  |                                                                              |=====================                                                 |  30%  |                                                                              |======================                                                |  31%  |                                                                              |======================                                                |  32%  |                                                                              |=======================                                               |  32%  |                                                                              |=======================                                               |  33%  |                                                                              |========================                                              |  34%  |                                                                              |========================                                              |  35%  |                                                                              |=========================                                             |  36%  |                                                                              |==========================                                            |  37%  |                                                                              |==========================                                            |  38%  |                                                                              |===========================                                           |  38%  |                                                                              |===========================                                           |  39%  |                                                                              |============================                                          |  40%  |                                                                              |=============================                                         |  41%  |                                                                              |=============================                                         |  42%  |                                                                              |==============================                                        |  42%  |                                                                              |==============================                                        |  43%  |                                                                              |===============================                                       |  44%  |                                                                              |================================                                      |  45%  |                                                                              |================================                                      |  46%  |                                                                              |=================================                                     |  47%  |                                                                              |=================================                                     |  48%  |                                                                              |==================================                                    |  48%  |                                                                              |==================================                                    |  49%  |                                                                              |===================================                                   |  50%  |                                                                              |====================================                                  |  51%  |                                                                              |====================================                                  |  52%  |                                                                              |=====================================                                 |  52%  |                                                                              |=====================================                                 |  53%  |                                                                              |======================================                                |  54%  |                                                                              |======================================                                |  55%  |                                                                              |=======================================                               |  56%  |                                                                              |========================================                              |  57%  |                                                                              |========================================                              |  58%  |                                                                              |=========================================                             |  58%  |                                                                              |=========================================                             |  59%  |                                                                              |==========================================                            |  60%  |                                                                              |===========================================                           |  61%  |                                                                              |===========================================                           |  62%  |                                                                              |============================================                          |  62%  |                                                                              |============================================                          |  63%  |                                                                              |=============================================                         |  64%  |                                                                              |==============================================                        |  65%  |                                                                              |==============================================                        |  66%  |                                                                              |===============================================                       |  67%  |                                                                              |===============================================                       |  68%  |                                                                              |================================================                      |  68%  |                                                                              |================================================                      |  69%  |                                                                              |=================================================                     |  70%  |                                                                              |==================================================                    |  71%  |                                                                              |==================================================                    |  72%  |                                                                              |===================================================                   |  72%  |                                                                              |===================================================                   |  73%  |                                                                              |====================================================                  |  74%  |                                                                              |====================================================                  |  75%  |                                                                              |=====================================================                 |  76%  |                                                                              |======================================================                |  77%  |                                                                              |======================================================                |  78%  |                                                                              |=======================================================               |  78%  |                                                                              |=======================================================               |  79%  |                                                                              |========================================================              |  80%  |                                                                              |=========================================================             |  81%  |                                                                              |=========================================================             |  82%  |                                                                              |==========================================================            |  82%  |                                                                              |==========================================================            |  83%  |                                                                              |===========================================================           |  84%  |                                                                              |============================================================          |  85%  |                                                                              |============================================================          |  86%  |                                                                              |=============================================================         |  87%  |                                                                              |=============================================================         |  88%  |                                                                              |==============================================================        |  88%  |                                                                              |==============================================================        |  89%  |                                                                              |===============================================================       |  90%  |                                                                              |================================================================      |  91%  |                                                                              |================================================================      |  92%  |                                                                              |=================================================================     |  92%  |                                                                              |=================================================================     |  93%  |                                                                              |==================================================================    |  94%  |                                                                              |==================================================================    |  95%  |                                                                              |===================================================================   |  96%  |                                                                              |====================================================================  |  97%  |                                                                              |====================================================================  |  98%  |                                                                              |===================================================================== |  98%  |                                                                              |===================================================================== |  99%  |                                                                              |======================================================================| 100%
+Made 120 plots of genes with isoform switching
+            gene_ref            gene_id gene_name condition_1    condition_2
+1  geneComp_00156195 ENSG00000178053.19      MLF1     control       UPF3A_OE
+2  geneComp_00077453 ENSG00000131051.24     RBM39     control  UPF3A_2_20_3B
+3  geneComp_00158102  ENSG00000188486.3      H2AX     control       UPF3A_OE
+4  geneComp_00036402 ENSG00000057663.16      ATG5     control UPF3A_2_14_Luc
+5  geneComp_00197450  ENSG00000224531.6    SMIM13     control             WT
+6  geneComp_00161808  ENSG00000224531.6    SMIM13     control       UPF3A_OE
+7  geneComp_00013627 ENSG00000178053.19      MLF1     control  UPF3A_2_14_3B
+8  geneComp_00072044 ENSG00000057663.16      ATG5     control  UPF3A_2_20_3B
+9  geneComp_00000760 ENSG00000057663.16      ATG5     control  UPF3A_2_14_3B
+10 geneComp_00082078 ENSG00000164062.13      APEH     control  UPF3A_2_20_3B
+   gene_switch_q_value switchConsequencesGene Rank
+1         8.385845e-49                   TRUE    1
+2         3.756775e-39                   TRUE    2
+3         4.048777e-33                   TRUE    3
+4         2.640104e-32                   TRUE    4
+5         1.192462e-24                   TRUE    5
+6         2.874049e-24                   TRUE    6
+7         6.090392e-24                   TRUE    7
+8         3.216397e-23                   TRUE    8
+9         1.333315e-22                   TRUE    9
+10        1.561282e-21                   TRUE   10
+Warning message:
+Removed 530 rows containing missing values (geom_point). 
+null device 
+          1 
+Warning message:
+Removed 1309 rows containing missing values (geom_point). 
+null device 
+          1 
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Registering fonts with R
+
+********************************************************
+Note: As of version 1.0.0, cowplot does not change the
+  default ggplot2 theme anymore. To recover the previous
+  behavior, execute:
+  theme_set(theme_cowplot())
+********************************************************
+
+There were 18 warnings (use warnings() to see them)
+null device 
+          1 
+There were 30 warnings (use warnings() to see them)
+
+###################
+## Perform leafcutter alternative splicing analysis
+###################
+
+Leafcutter directory: /home/volker/Tools/leafcutter
+2020-11-30 09:46:27 Converting A006850100_136496 to A006850100_136496.junc
+2020-11-30 09:46:27 BAM file already converted to junc file
+2020-11-30 09:46:27 Converting A006850100_136498 to A006850100_136498.junc
+2020-11-30 09:46:27 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136500 to A006850100_136500.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136502 to A006850100_136502.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136504 to A006850100_136504.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136506 to A006850100_136506.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136508 to A006850100_136508.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136510 to A006850100_136510.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136512 to A006850100_136512.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136514 to A006850100_136514.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136516 to A006850100_136516.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136518 to A006850100_136518.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136520 to A006850100_136520.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136522 to A006850100_136522.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136524 to A006850100_136524.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136526 to A006850100_136526.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136528 to A006850100_136528.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136530 to A006850100_136530.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136532 to A006850100_136532.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136534 to A006850100_136534.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Converting A006850100_136536 to A006850100_136536.junc
+2020-11-30 09:46:28 BAM file already converted to junc file
+2020-11-30 09:46:28 Leafcutter analysis Step2 control_vs_UPF3A_2_14_Luc
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136502.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136504.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136506.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..KI270303.1:NA..chr14:NA..GL000208.1:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..KI270729.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..KI270538.1:NA..chr16:NA..chr15:NA..chrM:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..GL000214.1:NA..KI270719.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..chr4:NA..chr17:NA..chr6:NA..KI270709.1:NA..chrX:NA..KI270714.1:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..KI270708.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..GL000218.1:NA..KI270750.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 115887 clusters..
+Split into 4284 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136504.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136502.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136506.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:46:39 Leafcutter analysis Step3 control_vs_UPF3A_2_14_Luc
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_Luc/control_vs_UPF3A_2_14_Luc_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_Luc/Groups_control_vs_UPF3A_2_14_Luc.txt 
+Encoding as control =0, UPF3A_2_14_Luc =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_Luc/control_vs_UPF3A_2_14_Luc"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1               <=1 sample with coverage>min_coverage    2
+2 <2 introns used in >=min_samples_per_intron samples    2
+3                            Not enough valid samples  445
+4                                             Success 3835
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+2020-11-30 09:47:21 All leafcutter steps for control_vs_UPF3A_2_14_Luc finished successfully
+2020-11-30 09:47:22 Leafcutter analysis Step2 control_vs_UPF3A_2_14_3B
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136508.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136510.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136512.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..chr14:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..KI270747.1:NA..chr16:NA..chr15:NA..chrM:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..GL000214.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..KI270712.1:NA..chr4:NA..chr17:NA..chr6:NA..chrX:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270519.1:NA..KI270736.1:NA..KI270467.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..GL000218.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 116494 clusters..
+Split into 3718 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136512.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136510.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136508.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:47:32 Leafcutter analysis Step3 control_vs_UPF3A_2_14_3B
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_3B/control_vs_UPF3A_2_14_3B_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_3B/Groups_control_vs_UPF3A_2_14_3B.txt 
+Encoding as control =0, UPF3A_2_14_3B =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_14_3B/control_vs_UPF3A_2_14_3B"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1 <2 introns used in >=min_samples_per_intron samples    1
+2                            Not enough valid samples  437
+3                                             Success 3280
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+2020-11-30 09:48:12 All leafcutter steps for control_vs_UPF3A_2_14_3B finished successfully
+2020-11-30 09:48:13 Leafcutter analysis Step2 control_vs_UPF3A_2_20_Luc
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136514.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136516.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136518.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..chr14:NA..KI270714.1:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..KI270729.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..chr16:NA..chr15:NA..chrM:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..KI270715.1:NA..GL000214.1:NA..KI270719.1:NA..KI270735.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..chr4:NA..chr17:NA..chr6:NA..KI270754.1:NA..chrX:NA..KI270466.1:NA..KI270751.1:NA..KI270730.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..GL000218.1:NA..KI270750.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..KI270755.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 116868 clusters..
+Split into 3934 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136516.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136518.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136514.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:48:23 Leafcutter analysis Step3 control_vs_UPF3A_2_20_Luc
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_Luc/control_vs_UPF3A_2_20_Luc_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_Luc/Groups_control_vs_UPF3A_2_20_Luc.txt 
+Encoding as control =0, UPF3A_2_20_Luc =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_Luc/control_vs_UPF3A_2_20_Luc"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1               <=1 sample with coverage>min_coverage    7
+2 <2 introns used in >=min_samples_per_intron samples    1
+3                            Not enough valid samples  544
+4                                             Success 3382
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  cannot compute exact p-value with ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  cannot compute exact p-value with ties
+2020-11-30 09:49:02 All leafcutter steps for control_vs_UPF3A_2_20_Luc finished successfully
+2020-11-30 09:49:03 Leafcutter analysis Step2 control_vs_UPF3A_2_20_3B
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136520.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136522.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136524.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..KI270311.1:NA..chr14:NA..GL000208.1:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..chr16:NA..chr15:NA..chrM:NA..KI270720.1:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..KI270753.1:NA..GL000214.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..chr4:NA..chr17:NA..chr6:NA..chrX:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..KI270337.1:NA..GL000218.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 116145 clusters..
+Split into 4377 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136522.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136524.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136520.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:49:13 Leafcutter analysis Step3 control_vs_UPF3A_2_20_3B
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_3B/control_vs_UPF3A_2_20_3B_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_3B/Groups_control_vs_UPF3A_2_20_3B.txt 
+Encoding as control =0, UPF3A_2_20_3B =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_2_20_3B/control_vs_UPF3A_2_20_3B"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1                          <=1 sample with coverage>0    1
+2               <=1 sample with coverage>min_coverage    3
+3 <2 introns used in >=min_samples_per_intron samples    3
+4                            Not enough valid samples  443
+5                                             Success 3927
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  p-value will be approximate in the presence of ties
+2020-11-30 09:49:55 All leafcutter steps for control_vs_UPF3A_2_20_3B finished successfully
+2020-11-30 09:49:56 Leafcutter analysis Step2 control_vs_WT
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136526.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136528.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136530.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..chr14:NA..GL000208.1:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..KI270729.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..KI270538.1:NA..chr16:NA..chr15:NA..chrM:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..GL000214.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..KI270738.1:NA..chr4:NA..chr17:NA..chr6:NA..chrX:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..GL000218.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 116456 clusters..
+Split into 4902 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136530.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136526.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136528.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:50:07 Leafcutter analysis Step3 control_vs_WT
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_WT/control_vs_WT_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_WT/Groups_control_vs_WT.txt 
+Encoding as control =0, WT =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_WT/control_vs_WT"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1               <=1 sample with coverage>min_coverage    2
+2 <2 introns used in >=min_samples_per_intron samples    1
+3                            Not enough valid samples  602
+4                                             Success 4297
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  cannot compute exact p-value with ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  cannot compute exact p-value with ties
+2020-11-30 09:50:53 All leafcutter steps for control_vs_WT finished successfully
+2020-11-30 09:50:53 Leafcutter analysis Step2 control_vs_UPF3A_OE
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136532.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136534.junc...
+scanning /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136536.junc...
+Parsing...
+chr2:NA..chr1:NA..chr10:NA..GL000219.1:NA..KI270706.1:NA..KI270744.1:NA..chr14:NA..KI270731.1:NA..chr22:NA..GL000194.1:NA..chr11:NA..GL000224.1:NA..chr9:NA..GL000205.2:NA..GL000009.2:NA..KI270733.1:NA..GL000225.1:NA..chr3:NA..chr5:NA..GL000216.2:NA..chr19:NA..chr16:NA..chr15:NA..chrM:NA..KI270720.1:NA..KI270728.1:NA..chr18:NA..GL000221.1:NA..SIRVomeERCCome:NA..GL000220.1:NA..chr12:NA..GL000214.1:NA..KI270721.1:NA..KI270745.1:NA..chr21:NA..chr4:NA..chr17:NA..chr6:NA..chrX:NA..KI270751.1:NA..GL000008.2:NA..KI270743.1:NA..KI270736.1:NA..KI270467.1:NA..KI270708.1:NA..GL000195.1:NA..chr13:NA..KI270442.1:NA..KI270713.1:NA..GL000218.1:NA..KI270750.1:NA..KI270438.1:NA..chr20:NA..KI270722.1:NA..KI270755.1:NA..chr8:NA..chr7:NA..chrY:NA..KI270711.1:NA..KI270734.1:NA..KI270742.1:NA..
+Wrote 116188 clusters..
+Split into 4957 clusters...
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136534.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136536.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136532.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136500.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136496.junc..
+Sorting /home/volker/2020_11_UPF3_DW/leafcutter/Juncfile/A006850100_136498.junc..
+merging 6 junction files...
+merging 6 files done.
+2020-11-30 09:51:05 Leafcutter analysis Step3 control_vs_UPF3A_OE
+Reference gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz used for the leafcutter analysis
+Loading required package: Rcpp
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+Loading counts from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_OE/control_vs_UPF3A_OE_perind_numers.counts.gz 
+Loading metadata from /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_OE/Groups_control_vs_UPF3A_OE.txt 
+Encoding as control =0, UPF3A_OE =1
+Loading required package: doMC
+Loading required package: foreach
+Loading required package: iterators
+Loading required package: parallel
+Settings:
+$output_prefix
+[1] "/home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_OE/control_vs_UPF3A_OE"
+
+$max_cluster_size
+[1] Inf
+
+$min_samples_per_intron
+[1] 3
+
+$min_samples_per_group
+[1] 3
+
+$min_coverage
+[1] 20
+
+$timeout
+[1] 30
+
+$num_threads
+[1] 10
+
+$exon_file
+[1] "/home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz"
+
+$init
+[1] "smart"
+
+$seed
+[1] 12345
+
+$help
+[1] FALSE
+
+Running differential splicing analysis...
+Differential splicing summary:
+                                             statuses Freq
+1               <=1 sample with coverage>min_coverage    1
+2 <2 introns used in >=min_samples_per_intron samples    2
+3                            Not enough valid samples  603
+4                                             Success 4351
+Saving results...
+Loading exons from /home/volker/Tools/leafcutter/reference/gencode.v33.SIRVomeERCCome_exons_IDs.txt.gz 
+`summarise()` ungrouping output (override with `.groups` argument)
+All done, exiting
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+
+Attaching package: ‘readr’
+
+The following object is masked from ‘package:scales’:
+
+    col_factor
+
+Loading required package: AnnotationDbi
+Loading required package: stats4
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:parallel’:
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, append, as.data.frame, basename, cbind, colnames,
+    dirname, do.call, duplicated, eval, evalq, Filter, Find, get, grep,
+    grepl, intersect, is.unsorted, lapply, Map, mapply, match, mget,
+    order, paste, pmax, pmax.int, pmin, pmin.int, Position, rank,
+    rbind, Reduce, rownames, sapply, setdiff, sort, table, tapply,
+    union, unique, unsplit, which, which.max, which.min
+
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: IRanges
+Loading required package: S4Vectors
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:base’:
+
+    expand.grid
+
+
+Attaching package: ‘IRanges’
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+
+Attaching package: ‘AnnotationDbi’
+
+The following object is masked from ‘package:dplyr’:
+
+    select
+
+
+========================================
+circlize version 0.4.10
+CRAN page: https://cran.r-project.org/package=circlize
+Github page: https://github.com/jokergoo/circlize
+Documentation: https://jokergoo.github.io/circlize_book/book/
+
+If you use it in published research, please cite:
+Gu, Z. circlize implements and enhances circular visualization
+  in R. Bioinformatics 2014.
+
+This message can be suppressed by:
+  suppressPackageStartupMessages(library(circlize))
+========================================
+
+Registering fonts with R
+New names:
+* `` -> ...1
+Starting BioMart query ...
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Parsed with column specification:
+cols(
+  X1 = col_character(),
+  X2 = col_double()
+)
+Warning message:
+In ks.test(up$fiveSS_MaxEnt, down$fiveSS_MaxEnt) :
+  cannot compute exact p-value with ties
+Warning message:
+In ks.test(up$threeSS_MaxEnt, down$threeSS_MaxEnt) :
+  cannot compute exact p-value with ties
+2020-11-30 09:51:50 All leafcutter steps for control_vs_UPF3A_OE finished successfully
+2020-11-30 09:51:50 Run leafcutter combination script
+# of conditions:
+7
+Conditions:
+['control', 'UPF3A_2_14_Luc', 'UPF3A_2_14_3B', 'UPF3A_2_20_Luc', 'UPF3A_2_20_3B', 'WT', 'UPF3A_OE']
+# rows before filtering:
+10401
+# rows after filtering
+1942
+# rows of final df
+1942
+Condition UPF3A_2_14_Luc processed
+# rows before filtering:
+8902
+# rows after filtering
+2264
+# rows of final df
+3087
+Condition UPF3A_2_14_3B processed
+# rows before filtering:
+9181
+# rows after filtering
+589
+# rows of final df
+3228
+Condition UPF3A_2_20_Luc processed
+# rows before filtering:
+10702
+# rows after filtering
+2797
+# rows of final df
+4327
+Condition UPF3A_2_20_3B processed
+# rows before filtering:
+11692
+# rows after filtering
+543
+# rows of final df
+4434
+Condition WT processed
+# rows before filtering:
+11810
+# rows after filtering
+452
+# rows of final df
+4497
+Condition UPF3A_OE processed
+2020-11-30 09:51:59 All leafcutter steps finished successfully
+`summarise()` regrouping output by 'condition_2', 'geneID' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DTU)`
+  <chr>               <dbl>
+1 UPF3A_2_14_3B         654
+2 UPF3A_2_14_Luc        583
+3 UPF3A_2_20_3B         532
+4 UPF3A_2_20_Luc        189
+5 UPF3A_OE              433
+6 WT                    421
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DTU)/length(DTU)`
+  <chr>                           <dbl>
+1 UPF3A_2_14_3B                 0.0259 
+2 UPF3A_2_14_Luc                0.0231 
+3 UPF3A_2_20_3B                 0.0211 
+4 UPF3A_2_20_Luc                0.00749
+5 UPF3A_OE                      0.0172 
+6 WT                            0.0167 
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(AS)`
+  <chr>              <dbl>
+1 UPF3A_2_14_3B        358
+2 UPF3A_2_14_Luc       294
+3 UPF3A_2_20_3B        402
+4 UPF3A_2_20_Luc        80
+5 UPF3A_OE              49
+6 WT                    81
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(AS)/length(AS)`
+  <chr>                         <dbl>
+1 UPF3A_2_14_3B               0.0142 
+2 UPF3A_2_14_Luc              0.0117 
+3 UPF3A_2_20_3B               0.0159 
+4 UPF3A_2_20_Luc              0.00317
+5 UPF3A_OE                    0.00194
+6 WT                          0.00321
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DGE)`
+  <chr>               <dbl>
+1 UPF3A_2_14_3B        2263
+2 UPF3A_2_14_Luc       1390
+3 UPF3A_2_20_3B        1489
+4 UPF3A_2_20_Luc        802
+5 UPF3A_OE              285
+6 WT                    240
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DGE)/length(DGE)`
+  <chr>                           <dbl>
+1 UPF3A_2_14_3B                 0.0897 
+2 UPF3A_2_14_Luc                0.0551 
+3 UPF3A_2_20_3B                 0.0590 
+4 UPF3A_2_20_Luc                0.0318 
+5 UPF3A_OE                      0.0113 
+6 WT                            0.00952
+`summarise()` ungrouping output (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2', 'geneID' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+New names:
+* `` -> ...1
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DTU)`
+  <chr>               <dbl>
+1 UPF3A_2_14_3B         212
+2 UPF3A_2_14_Luc        158
+3 UPF3A_2_20_3B         151
+4 UPF3A_2_20_Luc         51
+5 UPF3A_OE              104
+6 WT                    102
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DTU)/length(DTU)`
+  <chr>                           <dbl>
+1 UPF3A_2_14_3B                 0.00841
+2 UPF3A_2_14_Luc                0.00626
+3 UPF3A_2_20_3B                 0.00599
+4 UPF3A_2_20_Luc                0.00202
+5 UPF3A_OE                      0.00412
+6 WT                            0.00404
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(AS)`
+  <chr>              <dbl>
+1 UPF3A_2_14_3B         78
+2 UPF3A_2_14_Luc        43
+3 UPF3A_2_20_3B         68
+4 UPF3A_2_20_Luc         4
+5 UPF3A_OE               4
+6 WT                     5
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(AS)/length(AS)`
+  <chr>                         <dbl>
+1 UPF3A_2_14_3B              0.00309 
+2 UPF3A_2_14_Luc             0.00170 
+3 UPF3A_2_20_3B              0.00270 
+4 UPF3A_2_20_Luc             0.000159
+5 UPF3A_OE                   0.000159
+6 WT                         0.000198
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DGE)`
+  <chr>               <dbl>
+1 UPF3A_2_14_3B         386
+2 UPF3A_2_14_Luc        257
+3 UPF3A_2_20_3B         262
+4 UPF3A_2_20_Luc        115
+5 UPF3A_OE               27
+6 WT                     22
+`summarise()` ungrouping output (override with `.groups` argument)
+# A tibble: 6 x 2
+  condition_2    `sum(DGE)/length(DGE)`
+  <chr>                           <dbl>
+1 UPF3A_2_14_3B                0.0153  
+2 UPF3A_2_14_Luc               0.0102  
+3 UPF3A_2_20_3B                0.0104  
+4 UPF3A_2_20_Luc               0.00456 
+5 UPF3A_OE                     0.00107 
+6 WT                           0.000872
+`summarise()` ungrouping output (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+`summarise()` regrouping output by 'condition_2' (override with `.groups` argument)
+# A tibble: 30 x 3
+# Groups:   condition_2 [6]
+   condition_2    quantile    baseMean
+   <chr>          <chr>          <dbl>
+ 1 UPF3A_2_14_3B  0%             0.329
+ 2 UPF3A_2_14_3B  25%            3.52 
+ 3 UPF3A_2_14_3B  50%           72.0  
+ 4 UPF3A_2_14_3B  75%          700.   
+ 5 UPF3A_2_14_3B  100%     1872458.   
+ 6 UPF3A_2_14_Luc 0%             0.329
+ 7 UPF3A_2_14_Luc 25%            3.52 
+ 8 UPF3A_2_14_Luc 50%           72.0  
+ 9 UPF3A_2_14_Luc 75%          700.   
+10 UPF3A_2_14_Luc 100%     1872458.   
+# … with 20 more rows
+
+###################
+## Perform MultiQC analysis
+###################
+
+[2020-11-30 09:52:36,015] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/volker/miniconda3/lib/python3.7/site-packages/multiqc_config.yaml
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  Loading config settings from: /home/volker/.multiqc_config.yaml
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  New config 'title': General QC analysis
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  New config 'intro_text': MultiQC reports summarise FastQC, Salmon, featureCounts and STAR analysis results.
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  New config 'custom_logo': /home/volker/Tools/logo_big.png
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  New config 'custom_logo_url': http://www.uni-koeln.de/math-nat-fak/genetik/groups/Gehring/
+[2020-11-30 09:52:36,017] multiqc                                            [DEBUG  ]  New config 'custom_logo_title': Gehring Lab
+[2020-11-30 09:52:36,018] multiqc                                            [DEBUG  ]  New config 'report_header_info': [{'Contact E-mail': 'boehmv@uni-koeln.de'}]
+[2020-11-30 09:52:36,018] multiqc                                            [DEBUG  ]  New config 'run_modules': ['fastqc', 'salmon', 'star', 'featureCounts']
+[2020-11-30 09:52:36,018] multiqc                                            [DEBUG  ]  New config 'fn_ignore_dirs': ['_STARpass1']
+[2020-11-30 09:52:36,018] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2020-11-30 09:52:36,018] multiqc                                            [DEBUG  ]  Command used: /home/volker/miniconda3/bin/multiqc /home/volker/2020_11_UPF3_DW/FASTQ /home/volker/2020_11_UPF3_DW/Salmon /srv/2020_11_UPF3_DW/UPF3 -v -f -o /home/volker/2020_11_UPF3_DW/QC/ --sample-names /home/volker/2020_11_UPF3_DW/Samples.txt
+[2020-11-30 09:52:36,208] multiqc                                            [WARNING]  MultiQC Version v1.9 now available!
+[2020-11-30 09:52:36,209] multiqc                                            [DEBUG  ]  Loading sample renaming config settings from: /home/volker/2020_11_UPF3_DW/Samples.txt
+[2020-11-30 09:52:36,209] multiqc                                            [DEBUG  ]  Found 2 sample renaming patterns
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  This is MultiQC v1.8
+[2020-11-30 09:52:36,209] multiqc                                            [DEBUG  ]  Command     : /home/volker/miniconda3/bin/multiqc /home/volker/2020_11_UPF3_DW/FASTQ /home/volker/2020_11_UPF3_DW/Salmon /srv/2020_11_UPF3_DW/UPF3 -v -f -o /home/volker/2020_11_UPF3_DW/QC/ --sample-names /home/volker/2020_11_UPF3_DW/Samples.txt
+[2020-11-30 09:52:36,209] multiqc                                            [DEBUG  ]  Working dir : /home/volker/2020_11_UPF3_DW/leafcutter/control_vs_UPF3A_OE
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  Template    : default
+[2020-11-30 09:52:36,209] multiqc                                            [DEBUG  ]  Running Python 3.7.6 | packaged by conda-forge | (default, Jun  1 2020, 18:57:50)  [GCC 7.5.0]
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  Report title: General QC analysis
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_11_UPF3_DW/FASTQ
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  Searching   : /home/volker/2020_11_UPF3_DW/Salmon
+[2020-11-30 09:52:36,209] multiqc                                            [INFO   ]  Searching   : /srv/2020_11_UPF3_DW/UPF3
+[2020-11-30 09:52:36,210] multiqc                                            [INFO   ]  Only using modules fastqc, salmon, star, featureCounts
+[2020-11-30 09:52:36,210] multiqc                                            [DEBUG  ]  Analysing modules: featureCounts, salmon, star, fastqc
+[2020-11-30 09:52:36,210] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp0lqhgou3
+[2020-11-30 09:52:36,299] multiqc                                            [DEBUG  ]  Ignored 198 search patterns as didn't match running modules.
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136512/_STARpass1
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136526/_STARpass1
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136496/_STARpass1
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136530/_STARpass1
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136528/_STARpass1
+[2020-11-30 09:52:36,313] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136516/_STARpass1
+[2020-11-30 09:52:36,314] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136504/_STARpass1
+[2020-11-30 09:52:36,314] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136520/_STARpass1
+[2020-11-30 09:52:36,314] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136532/_STARpass1
+[2020-11-30 09:52:36,314] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136524/_STARpass1
+[2020-11-30 09:52:36,314] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136518/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136498/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136534/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136522/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136508/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136506/_STARpass1
+[2020-11-30 09:52:36,315] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136502/_STARpass1
+[2020-11-30 09:52:36,316] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136510/_STARpass1
+[2020-11-30 09:52:36,316] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136500/_STARpass1
+[2020-11-30 09:52:36,316] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136514/_STARpass1
+[2020-11-30 09:52:36,316] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2020_11_UPF3_DW/UPF3/BAM/A006850100_136536/_STARpass1
+[2020-11-30 09:52:36,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_1.fq.gz
+[2020-11-30 09:52:36,319] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_1.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136510_2.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136520_1.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136518_1.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_1.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136522_2.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136520_2.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136496_1.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136502_2.fq.gz
+[2020-11-30 09:52:36,320] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136514_2.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_1.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136516_1.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136512_2.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_1.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136498_2.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_1.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_2.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_2.fq.gz
+[2020-11-30 09:52:36,321] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136522_1.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136500_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136518_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136516_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_2.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136500_1.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136498_1.fq.gz
+[2020-11-30 09:52:36,322] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136524_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_2.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136508_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136502_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136506_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136504_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136504_2.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136514_1.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136506_2.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136524_2.fq.gz
+[2020-11-30 09:52:36,323] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136496_2.fq.gz
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136508_2.fq.gz
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136510_1.fq.gz
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136512_1.fq.gz
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136500_S3_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136520_S13_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136520_S13_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136500_S3_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: index.html
+[2020-11-30 09:52:36,324] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136522_S14_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136516_S11_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136518_S12_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136512_S9_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: multiqc_report.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136506_S6_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136522_S14_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,325] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_S19_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_S20_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_S17_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_S18_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136508_S7_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136502_S4_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,329] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136532_S19_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,330] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136514_S10_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,330] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136512_S9_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,330] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136508_S7_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,330] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136496_S1_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,330] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136506_S6_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,331] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136528_S17_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,331] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136514_S10_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,331] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136498_S2_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,331] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_S16_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,331] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136496_S1_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,332] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136516_S11_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,333] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_S21_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136530_S18_L004_R2_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136536_S21_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136510_S8_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136534_S20_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136498_S2_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136518_S12_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136524_S15_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136510_S8_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,334] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136524_S15_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136504_S5_L003_R1_001_fastqc.html
+[2020-11-30 09:52:36,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136526_S16_L004_R1_001_fastqc.html
+[2020-11-30 09:52:36,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136504_S5_L003_R2_001_fastqc.html
+[2020-11-30 09:52:36,335] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006850100_136502_S4_L003_R1_001_fastqc.html
+[2020-11-30 09:52:37,490] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,546] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,546] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,547] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,614] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,614] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,615] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,670] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,670] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,671] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,733] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,734] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,735] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,797] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,798] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,798] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,860] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,861] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,862] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,919] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,920] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,920] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:37,982] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:37,982] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:37,983] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,044] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,045] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,046] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,108] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,109] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,110] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,164] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,164] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,165] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,224] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,224] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,225] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,291] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,291] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,292] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,356] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,356] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,357] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,416] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,417] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,418] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,477] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,477] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,478] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,541] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,541] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,542] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,595] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,596] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,596] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,654] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,717] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,718] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2020-11-30 09:52:38,784] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2020-11-30 09:52:38,784] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2020-11-30 09:52:38,988] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-11-30 09:52:38,998] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2020-11-30 09:52:39,001] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.1.1
+[2020-11-30 09:52:39,020] multiqc.modules.salmon.salmon                      [INFO   ]  Found 21 meta reports
+[2020-11-30 09:52:39,020] multiqc.modules.salmon.salmon                      [INFO   ]  Found 21 fragment length distributions
+[2020-11-30 09:52:39,184] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136512
+[2020-11-30 09:52:39,251] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136526
+[2020-11-30 09:52:39,316] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136496
+[2020-11-30 09:52:39,382] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136530
+[2020-11-30 09:52:39,447] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136528
+[2020-11-30 09:52:39,513] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136516
+[2020-11-30 09:52:39,577] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136504
+[2020-11-30 09:52:39,643] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136520
+[2020-11-30 09:52:39,708] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136532
+[2020-11-30 09:52:39,773] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136524
+[2020-11-30 09:52:39,838] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136518
+[2020-11-30 09:52:39,902] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136498
+[2020-11-30 09:52:39,975] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136534
+[2020-11-30 09:52:40,049] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136522
+[2020-11-30 09:52:40,124] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136508
+[2020-11-30 09:52:40,198] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136506
+[2020-11-30 09:52:40,274] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136502
+[2020-11-30 09:52:40,348] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136510
+[2020-11-30 09:52:40,423] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136500
+[2020-11-30 09:52:40,497] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136514
+[2020-11-30 09:52:40,572] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006850100_136536
+[2020-11-30 09:52:40,572] multiqc.modules.star.star                          [INFO   ]  Found 21 reports and 21 gene count files
+[2020-11-30 09:52:40,583] multiqc                                            [DEBUG  ]  No samples found: fastqc
+[2020-11-30 09:52:40,607] multiqc                                            [INFO   ]  Compressing plot data
+[2020-11-30 09:52:40,923] multiqc                                            [WARNING]  Deleting    : ../../QC/multiqc_report.html   (-f was specified)
+[2020-11-30 09:52:40,924] multiqc                                            [WARNING]  Deleting    : ../../QC/multiqc_data   (-f was specified)
+[2020-11-30 09:52:40,925] multiqc                                            [INFO   ]  Report      : ../../QC/multiqc_report.html
+[2020-11-30 09:52:40,925] multiqc                                            [INFO   ]  Data        : ../../QC/multiqc_data
+[2020-11-30 09:52:40,925] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp0lqhgou3/multiqc_data/multiqc_data.json' to '/home/volker/2020_11_UPF3_DW/QC/multiqc_data'
+[2020-11-30 09:52:40,927] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp0lqhgou3/multiqc_data/multiqc_general_stats.txt' to '/home/volker/2020_11_UPF3_DW/QC/multiqc_data'
+[2020-11-30 09:52:40,927] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp0lqhgou3/multiqc_data/multiqc_star.txt' to '/home/volker/2020_11_UPF3_DW/QC/multiqc_data'
+[2020-11-30 09:52:40,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp0lqhgou3/multiqc_data/multiqc_salmon.txt' to '/home/volker/2020_11_UPF3_DW/QC/multiqc_data'
+[2020-11-30 09:52:40,928] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp0lqhgou3/multiqc_data/multiqc_sources.txt' to '/home/volker/2020_11_UPF3_DW/QC/multiqc_data'
+[2020-11-30 09:52:41,026] multiqc                                            [INFO   ]  MultiQC complete
