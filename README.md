@@ -1,6 +1,6 @@
-# RNA-Seq analysis for: <br/> Deciphering the cellular roles and dissecting functional regions of UPF3A and UPF3B in human NMD
+# RNA-Seq analysis for: <br/> UPF3A and UPF3B are redundant and modular activators of NMD in human cells
 
-This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: <br/> [__Deciphering the cellular roles and dissecting functional regions of UPF3A and UPF3B in human NMD__] <br/> (available as bioRxiv preprint)
+This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: <br/> [__UPF3A and UPF3B are redundant and modular activators of NMD in human cells__] <br/> (available as bioRxiv preprint)
 
 Preprint:  
 
