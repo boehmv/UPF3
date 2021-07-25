@@ -1,9 +1,9 @@
 # RNA-Seq analysis for: <br/> UPF3A and UPF3B are redundant and modular activators of nonsense-mediated mRNA decay in human cells
 
-This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: <br/> [__UPF3A and UPF3B are redundant and modular activators of nonsense-mediated mRNA decay in human cells__] <br/> (available as bioRxiv preprint)
+This repository contains the code, scripts and log files for the RNA-Seq analysis of the project: <br/> [__UPF3A and UPF3B are redundant and modular activators of nonsense-mediated mRNA decay in human cells__](https://doi.org/10.1101/2021.07.07.451444) <br/> (available as bioRxiv preprint)
 
 Preprint:  
-
+[![DOI](https://img.shields.io/badge/DOI-10.1101%2F2020.07.07.191437-red)](https://doi.org/10.1101/2021.07.07.451444)  
 
 ## Graphical abstract
 
@@ -60,4 +60,5 @@ Feedback is welcome! For any question, please email: boehmv@uni.koeln.de or [cre
 
 ## Citation
 ### bioRxiv preprint
-In preparation
+Damaris Wallmeroth, Volker Boehm, Jan-Wilm Lackmann, Janine Altmüller, Christoph Dieterich and Niels H. Gehring (2021) __UPF3A and UPF3B are redundant and modular activators of nonsense-mediated mRNA decay in human cells__.
+bioRxiv 2021.07.07.451444; doi: https://doi.org/10.1101/2021.07.07.451444 
