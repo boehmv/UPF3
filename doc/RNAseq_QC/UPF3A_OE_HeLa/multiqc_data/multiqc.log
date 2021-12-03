@@ -1,0 +1,99 @@
+[2021-11-15 16:34:20,794] multiqc                                            [DEBUG  ]  No MultiQC config found: /home/volker/miniconda3/lib/python3.7/site-packages/multiqc_config.yaml
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  Loading config settings from: /home/volker/.multiqc_config.yaml
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'title': General QC analysis
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'intro_text': MultiQC reports summarise FastQC, Salmon, featureCounts and STAR analysis results.
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'custom_logo': /home/volker/Tools/logo_big.png
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'custom_logo_url': http://www.uni-koeln.de/math-nat-fak/genetik/groups/Gehring/
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'custom_logo_title': Gehring Lab
+[2021-11-15 16:34:20,797] multiqc                                            [DEBUG  ]  New config 'report_header_info': [{'Contact E-mail': 'boehmv@uni-koeln.de'}]
+[2021-11-15 16:34:20,798] multiqc                                            [DEBUG  ]  New config 'run_modules': ['fastqc', 'salmon', 'star', 'featureCounts']
+[2021-11-15 16:34:20,798] multiqc                                            [DEBUG  ]  New config 'fn_ignore_dirs': ['_STARpass1']
+[2021-11-15 16:34:20,798] multiqc                                            [DEBUG  ]  No MultiQC config found: multiqc_config.yaml
+[2021-11-15 16:34:20,798] multiqc                                            [DEBUG  ]  Command used: /home/volker/miniconda3/bin/multiqc /home/volker/2021_10_UPF3A_DW/FASTQ /home/volker/2021_10_UPF3A_DW/Salmon /srv/2021_10_UPF3A_DW/UPF3A_HeLa -v -f -o /home/volker/2021_10_UPF3A_DW/QC/ --sample-names /home/volker/2021_10_UPF3A_DW/Samples.txt
+[2021-11-15 16:34:20,953] multiqc                                            [WARNING]  MultiQC Version v1.11 now available!
+[2021-11-15 16:34:20,953] multiqc                                            [DEBUG  ]  Loading sample renaming config settings from: /home/volker/2021_10_UPF3A_DW/Samples.txt
+[2021-11-15 16:34:20,953] multiqc                                            [DEBUG  ]  Found 2 sample renaming patterns
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  This is MultiQC v1.8
+[2021-11-15 16:34:20,953] multiqc                                            [DEBUG  ]  Command     : /home/volker/miniconda3/bin/multiqc /home/volker/2021_10_UPF3A_DW/FASTQ /home/volker/2021_10_UPF3A_DW/Salmon /srv/2021_10_UPF3A_DW/UPF3A_HeLa -v -f -o /home/volker/2021_10_UPF3A_DW/QC/ --sample-names /home/volker/2021_10_UPF3A_DW/Samples.txt
+[2021-11-15 16:34:20,953] multiqc                                            [DEBUG  ]  Working dir : /home/volker/2021_10_UPF3A_DW/leafcutter/control_vs_UPF3A_OE_HeLa
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  Template    : default
+[2021-11-15 16:34:20,953] multiqc                                            [DEBUG  ]  Running Python 3.7.6 | packaged by conda-forge | (default, Jun  1 2020, 18:57:50)  [GCC 7.5.0]
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  Report title: General QC analysis
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  Searching   : /home/volker/2021_10_UPF3A_DW/FASTQ
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  Searching   : /home/volker/2021_10_UPF3A_DW/Salmon
+[2021-11-15 16:34:20,953] multiqc                                            [INFO   ]  Searching   : /srv/2021_10_UPF3A_DW/UPF3A_HeLa
+[2021-11-15 16:34:20,954] multiqc                                            [INFO   ]  Only using modules fastqc, salmon, star, featureCounts
+[2021-11-15 16:34:20,954] multiqc                                            [DEBUG  ]  Analysing modules: featureCounts, salmon, star, fastqc
+[2021-11-15 16:34:20,954] multiqc                                            [DEBUG  ]  Using temporary directory for creating report: /tmp/tmp7i1ja9jh
+[2021-11-15 16:34:21,037] multiqc                                            [DEBUG  ]  Ignored 198 search patterns as didn't match running modules.
+[2021-11-15 16:34:21,072] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156279/_STARpass1
+[2021-11-15 16:34:21,072] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156277/_STARpass1
+[2021-11-15 16:34:21,073] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156271/_STARpass1
+[2021-11-15 16:34:21,073] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156273/_STARpass1
+[2021-11-15 16:34:21,073] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156268/_STARpass1
+[2021-11-15 16:34:21,074] multiqc                                            [DEBUG  ]  Ignoring directory as matched fn_ignore_dirs: /srv/2021_10_UPF3A_DW/UPF3A_HeLa/BAM/A006200183_156275/_STARpass1
+[2021-11-15 16:34:21,076] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156268_1.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156268_2.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156275_2.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156277_1.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156271_1.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156275_1.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156273_1.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156273_2.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156277_2.fq.gz
+[2021-11-15 16:34:21,077] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156279_1.fq.gz
+[2021-11-15 16:34:21,078] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156271_2.fq.gz
+[2021-11-15 16:34:21,078] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156279_2.fq.gz
+[2021-11-15 16:34:21,078] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156275_2_fastqc.html
+[2021-11-15 16:34:21,082] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156273_2_fastqc.html
+[2021-11-15 16:34:21,082] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156268_2_fastqc.html
+[2021-11-15 16:34:21,082] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156271_1_fastqc.html
+[2021-11-15 16:34:21,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156279_2_fastqc.html
+[2021-11-15 16:34:21,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156279_1_fastqc.html
+[2021-11-15 16:34:21,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156273_1_fastqc.html
+[2021-11-15 16:34:21,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156277_1_fastqc.html
+[2021-11-15 16:34:21,083] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156271_2_fastqc.html
+[2021-11-15 16:34:21,084] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156275_1_fastqc.html
+[2021-11-15 16:34:21,084] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156268_1_fastqc.html
+[2021-11-15 16:34:21,084] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: A006200183_156277_2_fastqc.html
+[2021-11-15 16:34:21,405] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,468] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,469] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:21,485] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,544] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,545] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:21,572] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,634] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,635] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:21,655] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,731] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,731] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:21,760] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,828] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,828] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:21,864] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam
+[2021-11-15 16:34:21,929] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Chimeric.out.sam
+[2021-11-15 16:34:21,929] multiqc                                            [DEBUG  ]  Ignoring file as matched an ignore pattern: Aligned.sortedByCoord.out.bam.bai
+[2021-11-15 16:34:22,195] multiqc.plots.bargraph                             [DEBUG  ]  Using matplotlib version 3.1.1
+[2021-11-15 16:34:22,209] multiqc                                            [DEBUG  ]  No samples found: featureCounts
+[2021-11-15 16:34:22,213] multiqc.plots.linegraph                            [DEBUG  ]  Using matplotlib version 3.1.1
+[2021-11-15 16:34:22,219] multiqc.modules.salmon.salmon                      [INFO   ]  Found 6 meta reports
+[2021-11-15 16:34:22,219] multiqc.modules.salmon.salmon                      [INFO   ]  Found 6 fragment length distributions
+[2021-11-15 16:34:22,352] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156279
+[2021-11-15 16:34:22,428] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156277
+[2021-11-15 16:34:22,502] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156271
+[2021-11-15 16:34:22,580] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156273
+[2021-11-15 16:34:22,654] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156268
+[2021-11-15 16:34:22,728] multiqc.modules.star.star                          [DEBUG  ]  Duplicate ReadsPerGene sample name found! Overwriting: A006200183_156275
+[2021-11-15 16:34:22,729] multiqc.modules.star.star                          [INFO   ]  Found 6 reports and 6 gene count files
+[2021-11-15 16:34:24,304] multiqc.modules.fastqc.fastqc                      [INFO   ]  Found 12 reports
+[2021-11-15 16:34:24,451] multiqc                                            [INFO   ]  Compressing plot data
+[2021-11-15 16:34:24,706] multiqc                                            [INFO   ]  Report      : ../../QC/multiqc_report.html
+[2021-11-15 16:34:24,706] multiqc                                            [INFO   ]  Data        : ../../QC/multiqc_data
+[2021-11-15 16:34:24,707] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_fastqc.txt' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,707] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_data.json' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,708] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_general_stats.txt' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,709] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_star.txt' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,709] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_salmon.txt' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,709] multiqc                                            [DEBUG  ]  Moving data file from '/tmp/tmp7i1ja9jh/multiqc_data/multiqc_sources.txt' to '/home/volker/2021_10_UPF3A_DW/QC/multiqc_data'
+[2021-11-15 16:34:24,814] multiqc                                            [INFO   ]  MultiQC complete

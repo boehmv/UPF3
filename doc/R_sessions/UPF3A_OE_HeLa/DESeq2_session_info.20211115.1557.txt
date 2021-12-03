@@ -1,0 +1,58 @@
+R version 4.0.2 (2020-06-22)
+Platform: x86_64-pc-linux-gnu (64-bit)
+Running under: Ubuntu 18.04.6 LTS
+
+Matrix products: default
+BLAS:   /usr/lib/x86_64-linux-gnu/blas/libblas.so.3.7.1
+LAPACK: /usr/lib/x86_64-linux-gnu/lapack/liblapack.so.3.7.1
+
+locale:
+ [1] LC_CTYPE=C.UTF-8       LC_NUMERIC=C           LC_TIME=C.UTF-8       
+ [4] LC_COLLATE=C.UTF-8     LC_MONETARY=C.UTF-8    LC_MESSAGES=C.UTF-8   
+ [7] LC_PAPER=C.UTF-8       LC_NAME=C              LC_ADDRESS=C          
+[10] LC_TELEPHONE=C         LC_MEASUREMENT=C.UTF-8 LC_IDENTIFICATION=C   
+
+attached base packages:
+[1] parallel  stats4    stats     graphics  grDevices utils     datasets 
+[8] methods   base     
+
+other attached packages:
+ [1] ggplot2_3.3.5               data.table_1.14.2          
+ [3] gprofiler2_0.2.1            dplyr_1.0.7                
+ [5] org.Hs.eg.db_3.11.4         AnnotationDbi_1.50.3       
+ [7] RColorBrewer_1.1-2          pheatmap_1.0.12            
+ [9] limma_3.44.3                Glimma_1.16.0              
+[11] DESeq2_1.28.1               SummarizedExperiment_1.18.2
+[13] DelayedArray_0.14.1         matrixStats_0.61.0         
+[15] Biobase_2.48.0              GenomicRanges_1.40.0       
+[17] GenomeInfoDb_1.24.2         IRanges_2.22.2             
+[19] S4Vectors_0.26.1            BiocGenerics_0.34.0        
+[21] readr_2.0.2                 tximport_1.16.1            
+[23] optparse_1.7.1             
+
+loaded via a namespace (and not attached):
+ [1] bitops_1.0-7           bit64_4.0.5            httr_1.4.2            
+ [4] tools_4.0.2            utf8_1.2.2             R6_2.5.1              
+ [7] DBI_1.1.1              lazyeval_0.2.2         colorspace_2.0-2      
+[10] withr_2.4.2            tidyselect_1.1.1       bit_4.0.4             
+[13] compiler_4.0.2         cli_3.0.1              plotly_4.10.0         
+[16] labeling_0.4.2         scales_1.1.1           genefilter_1.70.0     
+[19] digest_0.6.28          XVector_0.28.0         pkgconfig_2.0.3       
+[22] htmltools_0.5.2        fastmap_1.1.0          htmlwidgets_1.5.4     
+[25] rlang_0.4.12           rstudioapi_0.13        RSQLite_2.2.8         
+[28] shiny_1.7.1            generics_0.1.1         farver_2.1.0          
+[31] jsonlite_1.7.2         crosstalk_1.1.1        BiocParallel_1.22.0   
+[34] vroom_1.5.5            RCurl_1.98-1.5         magrittr_2.0.1        
+[37] GenomeInfoDbData_1.2.3 Matrix_1.3-4           Rcpp_1.0.7            
+[40] munsell_0.5.0          fansi_0.5.0            lifecycle_1.0.1       
+[43] yaml_2.2.1             edgeR_3.30.3           zlibbioc_1.34.0       
+[46] grid_4.0.2             blob_1.2.2             promises_1.2.0.1      
+[49] crayon_1.4.1           lattice_0.20-45        splines_4.0.2         
+[52] annotate_1.66.0        hms_1.1.1              locfit_1.5-9.4        
+[55] pillar_1.6.4           geneplotter_1.66.0     XML_3.99-0.8          
+[58] glue_1.4.2             vctrs_0.3.8            tzdb_0.1.2            
+[61] httpuv_1.6.3           gtable_0.3.0           getopt_1.20.3         
+[64] purrr_0.3.4            tidyr_1.1.4            assertthat_0.2.1      
+[67] cachem_1.0.6           mime_0.12              xtable_1.8-4          
+[70] later_1.3.0            survival_3.2-13        viridisLite_0.4.0     
+[73] tibble_3.1.5           memoise_2.0.0          ellipsis_0.3.2        
